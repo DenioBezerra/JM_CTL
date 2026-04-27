@@ -1,0 +1,6 @@
+---
+layout: page
+title: Artigos
+description: Textos, opiniões, experiências e publicações recentes.
+---
+<div class="grid">{% for post in site.posts %}{% include card-post.html item=post label='Artigo' %}{% endfor %}</div>

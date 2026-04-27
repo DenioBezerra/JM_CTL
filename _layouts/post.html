@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post-hero">
+  <div class="container narrow reveal">
+    <span class="eyebrow">{{ page.category | default: 'Artigo' }}</span>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date: '%d/%m/%Y' }}</p>
+    {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title }}">{% endif %}
+  </div>
+</article>
+<section class="section"><div class="container narrow content-body reveal">{{ content }}</div></section>

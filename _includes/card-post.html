@@ -1,0 +1,8 @@
+<article class="card reveal">
+  {% if include.item.image %}<img src="{{ include.item.image | relative_url }}" alt="{{ include.item.title }}">{% endif %}
+  <div class="card-body">
+    <span class="eyebrow">{{ include.item.category | default: include.label }}</span>
+    <h3><a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a></h3>
+    <p>{{ include.item.excerpt | strip_html | truncate: 125 }}</p>
+  </div>
+</article>

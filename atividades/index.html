@@ -1,0 +1,6 @@
+---
+layout: page
+title: Atividades / Agenda
+description: Eventos, palestras, workshops, encontros e participações.
+---
+<div class="grid">{% for item in site.atividades %}{% include card-post.html item=item label='Atividade' %}{% endfor %}</div>

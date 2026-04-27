@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container narrow reveal">
+    <span class="eyebrow">{{ page.kicker | default: 'Jorge Maia' }}</span>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+  </div>
+</section>
+<section class="section"><div class="container content-body reveal">{{ content }}</div></section>

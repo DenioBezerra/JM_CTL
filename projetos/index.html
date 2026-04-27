@@ -1,0 +1,6 @@
+---
+layout: page
+title: Projetos e Empresas
+description: Iniciativas, empresas, programas e produtos ligados à atuação profissional.
+---
+<div class="grid">{% for item in site.projetos %}{% include card-post.html item=item label='Projeto' %}{% endfor %}</div>

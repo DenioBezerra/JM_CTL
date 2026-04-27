@@ -1,0 +1,212 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero home-hero">
+  <div class="container home-hero-grid">
+    <div class="hero-content reveal">
+      <span class="eyebrow">Tecnologia • Inovação • Autoridade Digital</span>
+
+      <h1>
+        Conectando pessoas, negócios e tecnologia com
+        <span class="gradient-text">visão de futuro.</span>
+      </h1>
+
+      <p class="lead">
+        Conteúdo, projetos, palestras, comunidades e experiências sobre IoT,
+        cloud, inteligência artificial e transformação digital.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="{{ '/sobre/' | relative_url }}">Conheça a trajetória</a>
+        <a class="btn secondary" href="{{ '/projetos/' | relative_url }}">Ver projetos</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>25+</strong>
+          <span>anos de tecnologia</span>
+        </div>
+
+        <div class="stat">
+          <strong>MVP</strong>
+          <span>reconhecimento Microsoft</span>
+        </div>
+
+        <div class="stat">
+          <strong>IoT</strong>
+          <span>cloud, IA e inovação</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-hero-image reveal">
+      <img src="{{ '/assets/img/jorgemaia.jpg' | relative_url }}" alt="Jorge Maia">
+      <div class="floating-card">
+        <strong>Autoridade em tecnologia</strong>
+        <span>Conteúdo, negócios, inovação e comunidade</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section home-about">
+  <div class="container feature">
+    <div class="reveal">
+      <span class="eyebrow">Sobre</span>
+      <h2>Uma presença técnica com linguagem clara, visão estratégica e impacto real.</h2>
+      <p>
+        Jorge Maia atua conectando comunidades, empresas e profissionais por meio de
+        conteúdo, palestras, consultoria, podcasts e projetos digitais.
+      </p>
+      <a class="btn secondary" href="{{ '/sobre/' | relative_url }}">Ler mais sobre Jorge</a>
+    </div>
+
+    <div class="about-image-card reveal">
+      <img src="{{ '/assets/img/jorgemaia2.webp' | relative_url }}" alt="Jorge Maia">
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Projetos</span>
+        <h2>Projetos e empresas</h2>
+        <p>Iniciativas que unem tecnologia, comunicação, negócios e comunidade.</p>
+      </div>
+      <a class="btn secondary" href="{{ '/projetos/' | relative_url }}">Todos os projetos</a>
+    </div>
+
+    <div class="highlight-grid">
+      <a class="highlight-card reveal" href="{{ '/projetos/' | relative_url }}">
+        <img src="{{ '/assets/img/ctl.png' | relative_url }}" alt="CTL">
+        <div>
+          <span>Empresa</span>
+          <h3>CrazyTechLabs</h3>
+          <p>Tecnologia, inovação, desenvolvimento e soluções digitais.</p>
+        </div>
+      </a>
+
+      <a class="highlight-card reveal" href="{{ '/podcast/' | relative_url }}">
+        <img src="{{ '/assets/img/jorgecastsemfundo.png' | relative_url }}" alt="JorgeCast">
+        <div>
+          <span>Podcast</span>
+          <h3>JorgeCast</h3>
+          <p>Conversas sobre carreira, tecnologia, inovação e mercado.</p>
+        </div>
+      </a>
+
+      <a class="highlight-card reveal" href="{{ '/youtube/' | relative_url }}">
+        <img src="{{ '/assets/img/jorgemaiayoutube.png' | relative_url }}" alt="YouTube Jorge Maia">
+        <div>
+          <span>Vídeos</span>
+          <h3>YouTube</h3>
+          <p>Conteúdos, entrevistas, cortes, eventos e aulas práticas.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Conteúdo</span>
+        <h2>Artigos recentes</h2>
+        <p>Opinião, experiências, eventos e reflexões sobre tecnologia e mercado.</p>
+      </div>
+      <a class="btn secondary" href="{{ '/artigos/' | relative_url }}">Ver artigos</a>
+    </div>
+
+    <div class="grid">
+      {% for post in site.posts limit:3 %}
+        {% include card-post.html item=post label='Artigo' %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Técnico</span>
+        <h2>Artigos técnicos</h2>
+        <p>Materiais para quem quer aprender, praticar e aplicar tecnologia no mundo real.</p>
+      </div>
+      <a class="btn secondary" href="{{ '/artigos-tecnicos/' | relative_url }}">Ver técnicos</a>
+    </div>
+
+    <div class="grid">
+      {% for item in site.artigos_tecnicos limit:3 %}
+        {% include card-post.html item=item label='Técnico' %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section media-section">
+  <div class="container grid two">
+    <div class="media-card reveal">
+      <img src="{{ '/assets/img/jorgecastS9E5.png' | relative_url }}" alt="JorgeCast">
+      <div>
+        <span class="eyebrow">JorgeCast</span>
+        <h2>Conversas sobre tecnologia, carreira e inovação.</h2>
+        <p>Um espaço para entrevistas, ideias e debates com profissionais que constroem o futuro.</p>
+        <a class="btn" href="{{ '/podcast/' | relative_url }}">Acessar podcast</a>
+      </div>
+    </div>
+
+    <div class="media-card reveal">
+      <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}" alt="YouTube">
+      <div>
+        <span class="eyebrow">YouTube</span>
+        <h2>Vídeos, eventos, cortes e conteúdos práticos.</h2>
+        <p>Conteúdo visual para ampliar o alcance das ideias e fortalecer a comunidade.</p>
+        <a class="btn secondary" href="{{ '/youtube/' | relative_url }}">Ver canal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Agenda</span>
+        <h2>Atividades e eventos</h2>
+        <p>Palestras, meetups, conferências, workshops e participações.</p>
+      </div>
+      <a class="btn secondary" href="{{ '/atividades/' | relative_url }}">Ver agenda</a>
+    </div>
+
+    <div class="grid">
+      {% for item in site.atividades limit:3 %}
+        {% include card-post.html item=item label='Atividade' %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section awards-home">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Reconhecimento</span>
+        <h2>Prêmios e destaques</h2>
+        <p>Reconhecimentos que reforçam uma trajetória de contribuição técnica e comunitária.</p>
+      </div>
+      <a class="btn secondary" href="{{ '/premios/' | relative_url }}">Ver prêmios</a>
+    </div>
+
+    <div class="awards-strip reveal">
+      <img src="{{ '/assets/img/premio.png' | relative_url }}" alt="Prêmio">
+      <img src="{{ '/assets/img/premio2.png' | relative_url }}" alt="Prêmio">
+      <img src="{{ '/assets/img/premio3.png' | relative_url }}" alt="Prêmio">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+title: "Jorge Maia"
+description: "Tecnologia, inovação, IoT, inteligência artificial, negócios digitais, palestras, projetos e conteúdo técnico."
+url: "https://deniobezerra.github.io"
+baseurl: "/JM_CTL"
+lang: "pt-BR"
+timezone: America/Sao_Paulo
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  projetos:
+    output: true
+    permalink: /projetos/:name/
+  artigos_tecnicos:
+    output: true
+    permalink: /artigos-tecnicos/:name/
+  atividades:
+    output: true
+    permalink: /atividades/:name/
+  premios:
+    output: true
+    permalink: /premios/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      category: artigos
+  - scope:
+      path: ""
+      type: "artigos_tecnicos"
+    values:
+      layout: post
+      category: tecnico
+  - scope:
+      path: ""
+      type: "projetos"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "atividades"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "premios"
+    values:
+      layout: page
+
+social:
+  email: "jm@jorgemaia.com.br"
+  linkedin: "https://www.linkedin.com/"
+  youtube: "https://www.youtube.com/"
+  instagram: "https://www.instagram.com/"
+
+exclude:
+  - README.md
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
