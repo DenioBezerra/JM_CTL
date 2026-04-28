@@ -1,6 +1,6 @@
 ---
 title: Gêmeos digitais e negócios conectados
-image: /assets/img/empresa.svg
+image: /assets/img/entrevistasyoutube.png
 excerpt: Uma visão prática sobre digital twins, IoT, dados e estratégia.
 ---
 ## Conceito

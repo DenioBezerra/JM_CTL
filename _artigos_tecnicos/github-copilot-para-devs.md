@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot para desenvolvedores
-image: /assets/img/tecnico.svg
+image: /assets/img/eventosyoutube.png
 excerpt: Como usar IA para acelerar estudos, produtividade e qualidade de código.
 ---
 ## Visão geral

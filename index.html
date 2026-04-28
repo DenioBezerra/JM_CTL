@@ -4,18 +4,20 @@ title: Home
 ---
 
 <section class="hero home-hero">
+  <div class="hero-bg-glow"></div>
+
   <div class="container home-hero-grid">
     <div class="hero-content reveal">
-      <span class="eyebrow">Tecnologia • Inovação • Autoridade Digital</span>
+      <span class="eyebrow">Tecnologia • Inovação • Comunidade</span>
 
       <h1>
-        Conectando pessoas, negócios e tecnologia com
-        <span class="gradient-text">visão de futuro.</span>
+        Transformando tecnologia em
+        <span class="gradient-text">conexões reais.</span>
       </h1>
 
       <p class="lead">
-        Conteúdo, projetos, palestras, comunidades e experiências sobre IoT,
-        cloud, inteligência artificial e transformação digital.
+        Conteúdo, palestras, projetos e experiências sobre IoT, cloud,
+        inteligência artificial e transformação digital.
       </p>
 
       <div class="hero-actions">
@@ -26,7 +28,7 @@ title: Home
       <div class="stats">
         <div class="stat">
           <strong>25+</strong>
-          <span>anos de tecnologia</span>
+          <span>anos de experiência</span>
         </div>
 
         <div class="stat">
@@ -41,109 +43,182 @@ title: Home
       </div>
     </div>
 
-    <div class="home-hero-image reveal">
-      <img src="{{ '/assets/img/jorgemaia.jpg' | relative_url }}" alt="Jorge Maia">
-      <div class="floating-card">
+    <div class="hero-visual reveal">
+      <div class="hero-image-frame">
+        <img src="{{ '/assets/img/jorgemaia.jpg' | relative_url }}" alt="Jorge Maia palestrando">
+      </div>
+
+      <div class="hero-badge hero-badge-main">
         <strong>Autoridade em tecnologia</strong>
-        <span>Conteúdo, negócios, inovação e comunidade</span>
+        <span>Conteúdo, inovação e comunidade</span>
+      </div>
+
+      <div class="hero-badge hero-badge-small">
+        <strong>+ Projetos</strong>
+        <span>Cloud • IA • IoT</span>
       </div>
     </div>
   </div>
 </section>
 
 <section class="section home-about">
-  <div class="container feature">
-    <div class="reveal">
-      <span class="eyebrow">Sobre</span>
-      <h2>Uma presença técnica com linguagem clara, visão estratégica e impacto real.</h2>
-      <p>
-        Jorge Maia atua conectando comunidades, empresas e profissionais por meio de
-        conteúdo, palestras, consultoria, podcasts e projetos digitais.
-      </p>
-      <a class="btn secondary" href="{{ '/sobre/' | relative_url }}">Ler mais sobre Jorge</a>
-    </div>
-
+  <div class="container about-premium">
     <div class="about-image-card reveal">
       <img src="{{ '/assets/img/jorgemaia2.webp' | relative_url }}" alt="Jorge Maia">
+    </div>
+
+    <div class="about-copy reveal">
+      <span class="eyebrow">Sobre</span>
+
+      <h2>Uma trajetória construída entre tecnologia, comunicação e impacto.</h2>
+
+      <p>
+        Jorge Maia conecta comunidades, empresas e profissionais por meio de conteúdo,
+        palestras, consultoria, podcasts e projetos digitais com linguagem clara,
+        visão estratégica e foco em inovação.
+      </p>
+
+      <div class="about-list">
+        <span>Cloud e transformação digital</span>
+        <span>IoT, inteligência artificial e dados</span>
+        <span>Conteúdo, eventos e comunidades</span>
+      </div>
+
+      <a class="btn secondary" href="{{ '/sobre/' | relative_url }}">Ler mais sobre Jorge</a>
     </div>
   </div>
 </section>
 
-<section class="section alt">
+<section class="section alt projects-showcase">
   <div class="container">
     <div class="section-head reveal">
       <div>
         <span class="eyebrow">Projetos</span>
-        <h2>Projetos e empresas</h2>
-        <p>Iniciativas que unem tecnologia, comunicação, negócios e comunidade.</p>
+        <h2>Ecossistema de projetos</h2>
+        <p>Iniciativas que conectam tecnologia, conteúdo, negócios e comunidade em uma presença digital integrada.</p>
       </div>
+
       <a class="btn secondary" href="{{ '/projetos/' | relative_url }}">Todos os projetos</a>
     </div>
 
-    <div class="highlight-grid">
-      <a class="highlight-card reveal" href="{{ '/projetos/' | relative_url }}">
-        <img src="{{ '/assets/img/ctl.png' | relative_url }}" alt="CTL">
-        <div>
+    <div class="projects-grid">
+      <a class="project-card project-card-large reveal" href="{{ '/projetos/' | relative_url }}">
+        <div class="project-image">
+          <img src="{{ '/assets/img/ctl.png' | relative_url }}" alt="CrazyTechLabs">
+        </div>
+
+        <div class="project-content">
           <span>Empresa</span>
           <h3>CrazyTechLabs</h3>
-          <p>Tecnologia, inovação, desenvolvimento e soluções digitais.</p>
+          <p>Tecnologia, inovação, desenvolvimento e soluções digitais para negócios modernos.</p>
         </div>
       </a>
 
-      <a class="highlight-card reveal" href="{{ '/podcast/' | relative_url }}">
-        <img src="{{ '/assets/img/jorgecastsemfundo.png' | relative_url }}" alt="JorgeCast">
-        <div>
+      <a class="project-card reveal" href="{{ '/podcast/' | relative_url }}">
+        <div class="project-image">
+          <img src="{{ '/assets/img/jorgecastsemfundo.png' | relative_url }}" alt="JorgeCast">
+        </div>
+
+        <div class="project-content">
           <span>Podcast</span>
           <h3>JorgeCast</h3>
-          <p>Conversas sobre carreira, tecnologia, inovação e mercado.</p>
+          <p>Conversas sobre carreira, tecnologia, inovação, comunidade e mercado.</p>
         </div>
       </a>
 
-      <a class="highlight-card reveal" href="{{ '/youtube/' | relative_url }}">
-        <img src="{{ '/assets/img/jorgemaiayoutube.png' | relative_url }}" alt="YouTube Jorge Maia">
-        <div>
+      <a class="project-card reveal" href="{{ '/youtube/' | relative_url }}">
+        <div class="project-image">
+          <img src="{{ '/assets/img/jorgemaiayoutube.png' | relative_url }}" alt="YouTube Jorge Maia">
+        </div>
+
+        <div class="project-content">
           <span>Vídeos</span>
           <h3>YouTube</h3>
-          <p>Conteúdos, entrevistas, cortes, eventos e aulas práticas.</p>
+          <p>Conteúdos, entrevistas, eventos, cortes e aulas práticas sobre tecnologia.</p>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section articles-showcase">
   <div class="container">
     <div class="section-head reveal">
       <div>
         <span class="eyebrow">Conteúdo</span>
-        <h2>Artigos recentes</h2>
-        <p>Opinião, experiências, eventos e reflexões sobre tecnologia e mercado.</p>
+        <h2>Insights recentes</h2>
+        <p>Artigos, experiências e reflexões sobre tecnologia, eventos, mercado e transformação digital.</p>
       </div>
-      <a class="btn secondary" href="{{ '/artigos/' | relative_url }}">Ver artigos</a>
+
+      <a class="btn secondary" href="{{ '/artigos/' | relative_url }}">Ver todos</a>
     </div>
 
-    <div class="grid">
+    <div class="articles-grid">
       {% for post in site.posts limit:3 %}
-        {% include card-post.html item=post label='Artigo' %}
+        <a class="article-card reveal" href="{{ post.url | relative_url }}">
+          <div class="article-image">
+            {% if post.image %}
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+            {% else %}
+              <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}" alt="{{ post.title }}">
+            {% endif %}
+          </div>
+
+          <div class="article-content">
+            <span>{{ post.category | default: 'Artigo' }}</span>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+
+            <div class="article-footer">
+              <small>{{ post.date | date: "%d/%m/%Y" }}</small>
+              <strong>Ler artigo →</strong>
+            </div>
+          </div>
+        </a>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section alt">
+<section class="section alt tech-showcase">
   <div class="container">
     <div class="section-head reveal">
       <div>
         <span class="eyebrow">Técnico</span>
-        <h2>Artigos técnicos</h2>
-        <p>Materiais para quem quer aprender, praticar e aplicar tecnologia no mundo real.</p>
+        <h2>Conteúdo técnico</h2>
+        <p>Materiais práticos para aprender, aplicar e evoluir em tecnologia no mundo real.</p>
       </div>
-      <a class="btn secondary" href="{{ '/artigos-tecnicos/' | relative_url }}">Ver técnicos</a>
+
+      <a class="btn secondary" href="{{ '/artigos-tecnicos/' | relative_url }}">
+        Ver todos
+      </a>
     </div>
 
-    <div class="grid">
+    <div class="tech-grid">
       {% for item in site.artigos_tecnicos limit:3 %}
-        {% include card-post.html item=item label='Técnico' %}
+        <a class="tech-card reveal" href="{{ item.url | relative_url }}">
+
+          <div class="tech-top">
+            {% if item.image %}
+              <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+            {% else %}
+              <img src="{{ '/assets/img/protocoloyoutube.png' | relative_url }}" alt="{{ item.title }}">
+            {% endif %}
+          </div>
+
+          <div class="tech-body">
+            <span>{{ item.category | default: 'Técnico' }}</span>
+
+            <h3>{{ item.title }}</h3>
+
+            <p>{{ item.excerpt | strip_html | truncate: 110 }}</p>
+
+            <div class="tech-footer">
+              <strong>Explorar conteúdo →</strong>
+            </div>
+          </div>
+
+        </a>
       {% endfor %}
     </div>
   </div>
