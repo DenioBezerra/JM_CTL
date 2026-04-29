@@ -3,4 +3,76 @@ layout: page
 title: Artigos Técnicos
 description: Guias, tutoriais e conteúdos práticos para desenvolvedores e profissionais de tecnologia.
 ---
-<div class="grid">{% for item in site.artigos_tecnicos %}{% include card-post.html item=item label='Técnico' %}{% endfor %}</div>
+
+<section class="technical-page-premium">
+
+  <div class="technical-hero">
+    <div>
+      <span class="eyebrow">Conteúdo técnico</span>
+
+      <h2>Guias, práticas e ideias para quem constrói tecnologia.</h2>
+
+      <p>
+        Materiais sobre cloud, IoT, inteligência artificial, produtividade,
+        desenvolvimento, arquitetura e transformação digital.
+      </p>
+    </div>
+
+    <img src="{{ '/assets/img/protocoloyoutube.png' | relative_url }}" alt="Conteúdo técnico">
+  </div>
+
+  <div class="technical-topics">
+    <div>
+      <strong>Cloud</strong>
+      <span>arquitetura e serviços</span>
+    </div>
+
+    <div>
+      <strong>IoT</strong>
+      <span>dispositivos e dados</span>
+    </div>
+
+    <div>
+      <strong>IA</strong>
+      <span>produtividade e automação</span>
+    </div>
+
+    <div>
+      <strong>Dev</strong>
+      <span>boas práticas e ferramentas</span>
+    </div>
+  </div>
+
+  <div class="technical-title">
+    <span class="eyebrow">Biblioteca técnica</span>
+    <h2>Conteúdos recentes</h2>
+  </div>
+
+  <div class="technical-list">
+
+    {% for item in site.artigos_tecnicos %}
+
+    <a class="technical-card" href="{{ item.url | relative_url }}">
+
+      <div class="technical-img">
+        {% if item.image %}
+          <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+        {% else %}
+          <img src="{{ '/assets/img/protocoloyoutube.png' | relative_url }}" alt="{{ item.title }}">
+        {% endif %}
+      </div>
+
+      <div class="technical-content">
+        <span>{{ item.category | default: 'Técnico' }}</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.excerpt | strip_html | truncate: 125 }}</p>
+        <strong>Ler conteúdo técnico →</strong>
+      </div>
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>

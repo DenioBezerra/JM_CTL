@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot Global Bootcamp
-image: /assets/img/tecnico.svg
+image: "/assets/img/entrevistasyoutube.png"
 excerpt: Evento para desenvolvedores sobre IA aplicada ao desenvolvimento.
 ---
 ## Atividade

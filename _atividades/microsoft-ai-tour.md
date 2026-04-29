@@ -1,6 +1,6 @@
 ---
 title: Microsoft AI Tour São Paulo
-image: /assets/img/evento.svg
+image: "/assets/img/eventosyoutube.png"
 excerpt: Participação em evento de inteligência artificial, inovação e comunidade.
 ---
 ## Atividade

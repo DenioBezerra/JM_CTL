@@ -1,6 +1,6 @@
 ---
 title: JorgeCast
-image: /assets/img/podcast.svg
+image: "/assets/img/jorgecastsemfundo.png"
 excerpt: Podcast com conversas sobre tecnologia, inovação, comunidade e carreira.
 ---
 ## JorgeCast

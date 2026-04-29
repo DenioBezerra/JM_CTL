@@ -3,4 +3,61 @@ layout: page
 title: YouTube
 description: Conteúdos em vídeo, entrevistas, palestras, cortes e materiais técnicos.
 ---
-<div class="grid two"><div class="glass"><h2>Canal oficial</h2><p>Adicione aqui vídeos em destaque, playlists e chamadas para inscrição no canal.</p><a class="btn" href="#">Acessar canal</a></div><img class="glass" src="{{ '/assets/img/youtube.svg' | relative_url }}" alt="YouTube"></div>
+
+<section class="youtube-page-premium">
+  <div class="youtube-hero-card">
+    <div class="youtube-copy">
+      <span class="eyebrow">Canal oficial</span>
+
+      <h2>Vídeos, eventos, entrevistas e tecnologia aplicada na prática.</h2>
+
+      <p>
+        Conteúdos em vídeo para compartilhar conhecimento, ampliar conversas,
+        registrar eventos e aproximar tecnologia de pessoas, comunidades e negócios.
+      </p>
+
+      <div class="youtube-actions">
+        <a class="btn" href="#">Acessar canal</a>
+        <a class="btn secondary" href="{{ '/podcast/' | relative_url }}">Ver JorgeCast</a>
+      </div>
+    </div>
+
+    <div class="youtube-hero-image">
+      <img src="{{ '/assets/img/jorgemaiayoutube.png' | relative_url }}" alt="Canal do YouTube Jorge Maia">
+    </div>
+  </div>
+
+  <div class="youtube-section-title">
+    <span class="eyebrow">Conteúdos</span>
+    <h2>Editorias em destaque</h2>
+  </div>
+
+  <div class="youtube-grid">
+    <a class="youtube-card" href="#">
+      <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}" alt="Eventos no YouTube">
+      <div>
+        <span>Eventos</span>
+        <h3>Coberturas, palestras e participações</h3>
+        <p>Registros de eventos, talks, encontros técnicos e momentos de comunidade.</p>
+      </div>
+    </a>
+
+    <a class="youtube-card" href="#">
+      <img src="{{ '/assets/img/entrevistasyoutube.png' | relative_url }}" alt="Entrevistas no YouTube">
+      <div>
+        <span>Entrevistas</span>
+        <h3>Conversas com profissionais e convidados</h3>
+        <p>Conteúdos com convidados, histórias, carreira, inovação e tecnologia.</p>
+      </div>
+    </a>
+
+    <a class="youtube-card" href="#">
+      <img src="{{ '/assets/img/protocoloyoutube.png' | relative_url }}" alt="Conteúdo técnico no YouTube">
+      <div>
+        <span>Técnico</span>
+        <h3>Materiais práticos e temas de tecnologia</h3>
+        <p>Vídeos sobre cloud, IoT, inteligência artificial, carreira e mercado.</p>
+      </div>
+    </a>
+  </div>
+</section>

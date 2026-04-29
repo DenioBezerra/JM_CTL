@@ -3,4 +3,79 @@ layout: page
 title: Atividades / Agenda
 description: Eventos, palestras, workshops, encontros e participações.
 ---
-<div class="grid">{% for item in site.atividades %}{% include card-post.html item=item label='Atividade' %}{% endfor %}</div>
+
+<section class="agenda-premium">
+
+  <!-- INTRO -->
+  <div class="agenda-hero">
+    <div>
+      <span class="eyebrow">Agenda profissional</span>
+
+      <h2>Eventos, palestras e experiências que conectam tecnologia e pessoas.</h2>
+
+      <p>
+        Participações em conferências, bootcamps, workshops e encontros
+        sobre cloud, IoT, inteligência artificial, carreira e inovação.
+      </p>
+    </div>
+
+    <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}" alt="Eventos">
+  </div>
+
+  <!-- DESTAQUES -->
+  <div class="agenda-highlights">
+
+    <a class="agenda-highlight-card">
+      <img src="{{ '/assets/img/entrevistasyoutube.png' | relative_url }}">
+      <div>
+        <span>Palestras</span>
+        <h3>Eventos e conferências</h3>
+        <p>Presença ativa em comunidades e grandes eventos de tecnologia.</p>
+      </div>
+    </a>
+
+    <a class="agenda-highlight-card">
+      <img src="{{ '/assets/img/protocoloyoutube.png' | relative_url }}">
+      <div>
+        <span>Conteúdo</span>
+        <h3>Workshops e temas técnicos</h3>
+        <p>Conteúdo prático sobre cloud, IA, IoT e inovação.</p>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- LISTA -->
+  <div class="agenda-list-title">
+    <span class="eyebrow">Atividades</span>
+    <h2>Últimas participações</h2>
+  </div>
+
+  <div class="agenda-list">
+
+    {% for item in site.atividades %}
+
+    <a class="agenda-card" href="{{ item.url | relative_url }}">
+
+      <div class="agenda-img">
+        {% if item.image %}
+          <img src="{{ item.image | relative_url }}">
+        {% else %}
+          <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}">
+        {% endif %}
+      </div>
+
+      <div class="agenda-info">
+        <span>Atividade</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.excerpt | strip_html | truncate: 120 }}</p>
+        <strong>Ver detalhes →</strong>
+      </div>
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>

@@ -1,6 +1,6 @@
 ---
 title: Palestra IoT e Cloud
-image: /assets/img/iot.svg
+image: "/assets/img/protocoloyoutube.png"
 excerpt: Conteúdo sobre dispositivos conectados, dados e nuvem.
 ---
 ## Atividade

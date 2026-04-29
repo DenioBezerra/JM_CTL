@@ -1,28 +1,47 @@
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>Jorge Maia</h3>
-      <p>Autoridade em tecnologia, IoT, cloud, IA, negócios digitais e conteúdo para comunidades técnicas.</p>
+<footer class="site-footer footer-premium">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <a href="{{ '/' | relative_url }}" class="footer-logo">
+        <img src="{{ '/assets/img/jorgemaialogomarcasemfundo.png' | relative_url }}" alt="Jorge Maia">
+      </a>
+
+      <p>
+        Autoridade em tecnologia, IoT, cloud, IA, negócios digitais,
+        comunidades técnicas e produção de conteúdo.
+      </p>
+
+      <a class="btn footer-btn" href="{{ '/contato/' | relative_url }}">Entrar em contato</a>
     </div>
-    <div>
+
+    <div class="footer-column">
       <h4>Navegação</h4>
+      <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/sobre/' | relative_url }}">Sobre</a>
       <a href="{{ '/projetos/' | relative_url }}">Projetos</a>
-      <a href="{{ '/artigos/' | relative_url }}">Artigos</a>
-      <a href="{{ '/contato/' | relative_url }}">Contato</a>
-    </div>
-    <div>
-      <h4>Conteúdo</h4>
       <a href="{{ '/podcast/' | relative_url }}">JorgeCast</a>
       <a href="{{ '/youtube/' | relative_url }}">YouTube</a>
-      <a href="{{ '/atividades/' | relative_url }}">Atividades</a>
-      <a href="{{ '/premios/' | relative_url }}">Prêmios</a>
     </div>
-    <div>
+
+    <div class="footer-column">
+      <h4>Conteúdo</h4>
+      <a href="{{ '/atividades/' | relative_url }}">Agenda</a>
+      <a href="{{ '/artigos/' | relative_url }}">Artigos</a>
+      <a href="{{ '/artigos-tecnicos/' | relative_url }}">Artigos Técnicos</a>
+      <a href="{{ '/premios/' | relative_url }}">Prêmios</a>
+      <a href="{{ '/contato/' | relative_url }}">Contato</a>
+    </div>
+
+    <div class="footer-column">
       <h4>Contato</h4>
-      <p>{{ site.social.email }}</p>
-      <div class="social-links"><a href="#">LinkedIn</a><a href="#">YouTube</a><a href="#">Instagram</a></div>
+      <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">YouTube</a>
+      <a href="#">Instagram</a>
     </div>
   </div>
-  <p class="copyright">© {{ 'now' | date: '%Y' }} Jorge Maia. Todos os direitos reservados.</p>
+
+  <div class="container footer-bottom">
+    <p>© {{ 'now' | date: '%Y' }} Jorge Maia. Todos os direitos reservados.</p>
+    <span>Tecnologia • Inovação • Comunidade</span>
+  </div>
 </footer>

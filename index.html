@@ -224,64 +224,123 @@ title: Home
   </div>
 </section>
 
-<section class="section media-section">
-  <div class="container grid two">
-    <div class="media-card reveal">
-      <img src="{{ '/assets/img/jorgecastS9E5.png' | relative_url }}" alt="JorgeCast">
+<section class="section media-section media-premium">
+  <div class="container">
+    <div class="section-head reveal">
       <div>
-        <span class="eyebrow">JorgeCast</span>
-        <h2>Conversas sobre tecnologia, carreira e inovação.</h2>
-        <p>Um espaço para entrevistas, ideias e debates com profissionais que constroem o futuro.</p>
-        <a class="btn" href="{{ '/podcast/' | relative_url }}">Acessar podcast</a>
+        <span class="eyebrow">Mídia e conteúdo</span>
+        <h2>Podcast, vídeos e conversas que aproximam tecnologia de pessoas.</h2>
+        <p>Conteúdo em áudio e vídeo para compartilhar experiências, entrevistas, eventos e ideias sobre inovação.</p>
       </div>
     </div>
 
-    <div class="media-card reveal">
-      <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}" alt="YouTube">
-      <div>
-        <span class="eyebrow">YouTube</span>
-        <h2>Vídeos, eventos, cortes e conteúdos práticos.</h2>
-        <p>Conteúdo visual para ampliar o alcance das ideias e fortalecer a comunidade.</p>
-        <a class="btn secondary" href="{{ '/youtube/' | relative_url }}">Ver canal</a>
-      </div>
+    <div class="media-premium-grid">
+      <a class="media-feature-card reveal" href="{{ '/podcast/' | relative_url }}">
+        <div class="media-image">
+          <img src="{{ '/assets/img/jorgecastS9E5.png' | relative_url }}" alt="JorgeCast">
+        </div>
+
+        <div class="media-info">
+          <span>JorgeCast</span>
+          <h3>Conversas sobre tecnologia, carreira e inovação.</h3>
+          <p>Entrevistas, ideias e debates com profissionais que ajudam a construir o futuro.</p>
+          <strong>Acessar podcast →</strong>
+        </div>
+      </a>
+
+      <a class="media-feature-card reveal" href="{{ '/youtube/' | relative_url }}">
+        <div class="media-image">
+          <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}" alt="YouTube">
+        </div>
+
+        <div class="media-info">
+          <span>YouTube</span>
+          <h3>Vídeos, eventos, cortes e conteúdos práticos.</h3>
+          <p>Conteúdo visual para ampliar ideias, fortalecer comunidade e compartilhar conhecimento.</p>
+          <strong>Ver canal →</strong>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="section alt">
+<section class="section alt events-showcase">
   <div class="container">
     <div class="section-head reveal">
       <div>
         <span class="eyebrow">Agenda</span>
-        <h2>Atividades e eventos</h2>
-        <p>Palestras, meetups, conferências, workshops e participações.</p>
+        <h2>Atividades, eventos e participações</h2>
+        <p>Palestras, meetups, conferências, workshops e experiências conectando tecnologia e comunidade.</p>
       </div>
+
       <a class="btn secondary" href="{{ '/atividades/' | relative_url }}">Ver agenda</a>
     </div>
 
-    <div class="grid">
+    <div class="events-grid">
       {% for item in site.atividades limit:3 %}
-        {% include card-post.html item=item label='Atividade' %}
+        <a class="event-card reveal" href="{{ item.url | relative_url }}">
+          <div class="event-image">
+            {% if item.image %}
+              <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+            {% else %}
+              <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}" alt="{{ item.title }}">
+            {% endif %}
+          </div>
+
+          <div class="event-content">
+            <span class="event-label">Atividade</span>
+
+            <h3>{{ item.title }}</h3>
+
+            <p>{{ item.excerpt | strip_html | truncate: 115 }}</p>
+
+            <div class="event-footer">
+              <strong>Ver detalhes →</strong>
+            </div>
+          </div>
+        </a>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section awards-home">
+<section class="section awards-home awards-premium">
   <div class="container">
     <div class="section-head reveal">
       <div>
         <span class="eyebrow">Reconhecimento</span>
-        <h2>Prêmios e destaques</h2>
-        <p>Reconhecimentos que reforçam uma trajetória de contribuição técnica e comunitária.</p>
+        <h2>Prêmios, conquistas e destaques</h2>
+        <p>Reconhecimentos que reforçam uma trajetória de contribuição técnica, liderança e impacto na comunidade.</p>
       </div>
+
       <a class="btn secondary" href="{{ '/premios/' | relative_url }}">Ver prêmios</a>
     </div>
 
-    <div class="awards-strip reveal">
-      <img src="{{ '/assets/img/premio.png' | relative_url }}" alt="Prêmio">
-      <img src="{{ '/assets/img/premio2.png' | relative_url }}" alt="Prêmio">
-      <img src="{{ '/assets/img/premio3.png' | relative_url }}" alt="Prêmio">
+    <div class="awards-premium-grid">
+      <a class="award-card award-card-feature reveal" href="{{ '/premios/' | relative_url }}">
+        <img src="{{ '/assets/img/premio.png' | relative_url }}" alt="Prêmio Microsoft MVP">
+        <div class="award-info">
+          <span>Microsoft MVP</span>
+          <h3>Reconhecimento técnico e comunitário</h3>
+          <p>Trajetória reconhecida por contribuição, compartilhamento de conhecimento e atuação na comunidade.</p>
+        </div>
+      </a>
+
+      <a class="award-card reveal" href="{{ '/premios/' | relative_url }}">
+        <img src="{{ '/assets/img/premio2.png' | relative_url }}" alt="Prêmio de excelência">
+        <div class="award-info">
+          <span>Excelência</span>
+          <h3>Destaque por qualidade e atuação profissional</h3>
+        </div>
+      </a>
+
+      <a class="award-card reveal" href="{{ '/premios/' | relative_url }}">
+        <img src="{{ '/assets/img/premio3.png' | relative_url }}" alt="Destaque em tecnologia">
+        <div class="award-info">
+          <span>Tecnologia</span>
+          <h3>Presença em eventos, comunidades e iniciativas digitais</h3>
+        </div>
+      </a>
     </div>
   </div>
 </section>

@@ -3,4 +3,73 @@ layout: page
 title: Projetos e Empresas
 description: Iniciativas, empresas, programas e produtos ligados à atuação profissional.
 ---
-<div class="grid">{% for item in site.projetos %}{% include card-post.html item=item label='Projeto' %}{% endfor %}</div>
+
+<section class="projects-page-premium">
+  <div class="projects-intro">
+    <div>
+      <span class="eyebrow">Ecossistema</span>
+      <h2>Projetos que conectam tecnologia, conteúdo e comunidade.</h2>
+      <p>
+        Uma visão integrada das iniciativas ligadas à atuação profissional de Jorge Maia:
+        empresas, canais, podcast, conteúdo técnico e presença digital.
+      </p>
+    </div>
+
+    <img src="{{ '/assets/img/ctl.png' | relative_url }}" alt="CrazyTechLabs">
+  </div>
+
+  <div class="projects-feature-grid">
+    <a class="project-feature-card large" href="{{ '/projetos/' | relative_url }}">
+      <img src="{{ '/assets/img/ctl.png' | relative_url }}" alt="CrazyTechLabs">
+      <div>
+        <span>Empresa</span>
+        <h3>CrazyTechLabs</h3>
+        <p>Laboratório de inovação, desenvolvimento e tecnologia aplicada a negócios digitais.</p>
+      </div>
+    </a>
+
+    <a class="project-feature-card" href="{{ '/podcast/' | relative_url }}">
+      <img src="{{ '/assets/img/jorgecastsemfundo.png' | relative_url }}" alt="JorgeCast">
+      <div>
+        <span>Podcast</span>
+        <h3>JorgeCast</h3>
+        <p>Conversas sobre carreira, tecnologia, inovação e comunidade.</p>
+      </div>
+    </a>
+
+    <a class="project-feature-card" href="{{ '/youtube/' | relative_url }}">
+      <img src="{{ '/assets/img/jorgemaiayoutube.png' | relative_url }}" alt="YouTube">
+      <div>
+        <span>Canal</span>
+        <h3>YouTube</h3>
+        <p>Palestras, entrevistas, cortes, eventos e conteúdos práticos.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="projects-section-title">
+    <span class="eyebrow">Todos os projetos</span>
+    <h2>Iniciativas em destaque</h2>
+  </div>
+
+  <div class="projects-list-premium">
+    {% for item in site.projetos %}
+      <a class="project-list-card" href="{{ item.url | relative_url }}">
+        <div class="project-list-image">
+          {% if item.image %}
+            <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+          {% else %}
+            <img src="{{ '/assets/img/fundosite.jpg' | relative_url }}" alt="{{ item.title }}">
+          {% endif %}
+        </div>
+
+        <div class="project-list-content">
+          <span>Projeto</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.excerpt | strip_html | truncate: 130 }}</p>
+          <strong>Conhecer projeto →</strong>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

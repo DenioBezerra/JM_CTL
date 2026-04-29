@@ -1,6 +1,6 @@
 ---
 title: Microsoft MVP Azure
-image: /assets/img/premio.svg
+image: "/assets/img/premio2.png"
 excerpt: Reconhecimento por contribuição técnica e atuação em comunidade.
 ---
 ## Reconhecimento

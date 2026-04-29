@@ -3,4 +3,86 @@ layout: page
 title: Artigos
 description: Textos, opiniões, experiências e publicações recentes.
 ---
-<div class="grid">{% for post in site.posts %}{% include card-post.html item=post label='Artigo' %}{% endfor %}</div>
+
+<section class="articles-premium">
+
+  <!-- HERO -->
+  <div class="articles-hero">
+    <div>
+      <span class="eyebrow">Conteúdo</span>
+
+      <h2>Insights, experiências e visão estratégica sobre tecnologia.</h2>
+
+      <p>
+        Artigos sobre cloud, IoT, inteligência artificial, carreira, inovação
+        e os movimentos do mercado de tecnologia.
+      </p>
+    </div>
+
+    <img src="{{ '/assets/img/protocoloyoutube.png' | relative_url }}" alt="Conteúdo técnico">
+  </div>
+
+  <!-- DESTAQUES -->
+  <div class="articles-highlight">
+
+    <a class="article-feature large" href="#">
+      <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}">
+      <div>
+        <span>Destaque</span>
+        <h3>Eventos, comunidade e tecnologia na prática</h3>
+        <p>Uma visão sobre participação em eventos e impacto na carreira tech.</p>
+      </div>
+    </a>
+
+    <a class="article-feature" href="#">
+      <img src="{{ '/assets/img/entrevistasyoutube.png' | relative_url }}">
+      <div>
+        <span>Entrevistas</span>
+        <h3>Conversas com profissionais</h3>
+      </div>
+    </a>
+
+    <a class="article-feature" href="#">
+      <img src="{{ '/assets/img/jorgemaiayoutube.png' | relative_url }}">
+      <div>
+        <span>Conteúdo</span>
+        <h3>Vídeos e insights</h3>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- LISTA -->
+  <div class="articles-title">
+    <span class="eyebrow">Publicações</span>
+    <h2>Artigos recentes</h2>
+  </div>
+
+  <div class="articles-list">
+
+    {% for post in site.posts %}
+
+    <a class="article-card" href="{{ post.url | relative_url }}">
+
+      <div class="article-img">
+        {% if post.image %}
+          <img src="{{ post.image | relative_url }}">
+        {% else %}
+          <img src="{{ '/assets/img/protocoloyoutube.png' | relative_url }}">
+        {% endif %}
+      </div>
+
+      <div class="article-content">
+        <span>Artigo</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        <strong>Ler artigo →</strong>
+      </div>
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>

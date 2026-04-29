@@ -1,6 +1,6 @@
 ---
 title: Canal no YouTube
-image: /assets/img/youtube.svg
+image: "/assets/img/jorgemaiayoutube.png"
 excerpt: Conteúdo em vídeo com palestras, entrevistas, cortes e tutoriais.
 ---
 ## YouTube

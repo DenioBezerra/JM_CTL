@@ -3,4 +3,80 @@ layout: page
 title: Prêmios
 description: Reconhecimentos, certificações, destaques e conquistas profissionais.
 ---
-<div class="grid">{% for item in site.premios %}{% include card-post.html item=item label='Prêmio' %}{% endfor %}</div>
+
+<section class="awards-page-premium">
+
+  <div class="awards-hero">
+    <div>
+      <span class="eyebrow">Reconhecimento</span>
+
+      <h2>Conquistas que refletem contribuição técnica, comunidade e impacto.</h2>
+
+      <p>
+        Uma trajetória marcada por premiações, certificações, participações em eventos
+        e reconhecimento por atuação em tecnologia, inovação e compartilhamento de conhecimento.
+      </p>
+    </div>
+
+    <img src="{{ '/assets/img/premio.png' | relative_url }}" alt="Prêmios Jorge Maia">
+  </div>
+
+  <div class="awards-feature-grid">
+    <div class="award-feature-card large">
+      <img src="{{ '/assets/img/premio.png' | relative_url }}" alt="Microsoft MVP">
+      <div>
+        <span>Microsoft MVP</span>
+        <h3>Reconhecimento por contribuição técnica e comunitária</h3>
+      </div>
+    </div>
+
+    <div class="award-feature-card">
+      <img src="{{ '/assets/img/premio2.png' | relative_url }}" alt="Prêmio de excelência">
+      <div>
+        <span>Excelência</span>
+        <h3>Destaque por qualidade e atuação profissional</h3>
+      </div>
+    </div>
+
+    <div class="award-feature-card">
+      <img src="{{ '/assets/img/premio3.png' | relative_url }}" alt="Reconhecimento em tecnologia">
+      <div>
+        <span>Tecnologia</span>
+        <h3>Presença em eventos, comunidades e iniciativas digitais</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="awards-title">
+    <span class="eyebrow">Linha do tempo</span>
+    <h2>Reconhecimentos em destaque</h2>
+  </div>
+
+  <div class="awards-list">
+
+    {% for item in site.premios %}
+
+    <a class="award-list-card" href="{{ item.url | relative_url }}">
+
+      <div class="award-list-image">
+        {% if item.image %}
+          <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+        {% else %}
+          <img src="{{ '/assets/img/premio.png' | relative_url }}" alt="{{ item.title }}">
+        {% endif %}
+      </div>
+
+      <div class="award-list-content">
+        <span>Prêmio</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.excerpt | strip_html | truncate: 130 }}</p>
+        <strong>Ver reconhecimento →</strong>
+      </div>
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>
