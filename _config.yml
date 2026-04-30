@@ -24,6 +24,9 @@ collections:
   premios:
     output: true
     permalink: /premios/:name/
+  episodios:
+    output: true
+    permalink: /podcast/:name/  
 
 defaults:
   - scope:
@@ -53,6 +56,12 @@ defaults:
       type: "premios"
     values:
       layout: page
+  - scope:
+      path: ""
+      type: "episodios"
+    values:
+      layout: post
+      category: JorgeCast
 
 social:
   email: "jm@jorgemaia.com.br"

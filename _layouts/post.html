@@ -1,12 +1,48 @@
 ---
 layout: default
 ---
-<article class="post-hero">
-  <div class="container narrow reveal">
-    <span class="eyebrow">{{ page.category | default: 'Artigo' }}</span>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date: '%d/%m/%Y' }}</p>
-    {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title }}">{% endif %}
-  </div>
+
+<article class="post-premium">
+
+  <header class="post-premium-hero">
+    <div class="container post-premium-grid">
+      <div class="post-premium-copy">
+        <span class="eyebrow">{{ page.category | default: "Conteúdo" }}</span>
+
+        <h1>{{ page.title }}</h1>
+
+        {% if page.excerpt %}
+          <p>{{ page.excerpt }}</p>
+        {% endif %}
+
+        <div class="post-meta-premium">
+          <span>{{ page.date | date: "%d/%m/%Y" }}</span>
+          <span>Leitura estratégica</span>
+        </div>
+      </div>
+
+      {% if page.image %}
+        <div class="post-premium-image">
+          <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <main class="container post-premium-body">
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <aside class="post-sidebar">
+      <div class="post-sidebar-card">
+        <span class="eyebrow">Explore</span>
+        <h3>Mais conteúdos</h3>
+        <a href="{{ '/artigos/' | relative_url }}">Artigos</a>
+        <a href="{{ '/artigos-tecnicos/' | relative_url }}">Artigos técnicos</a>
+        <a href="{{ '/projetos/' | relative_url }}">Projetos</a>
+      </div>
+    </aside>
+  </main>
+
 </article>
-<section class="section"><div class="container narrow content-body reveal">{{ content }}</div></section>
