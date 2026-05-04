@@ -3,7 +3,7 @@ layout: post
 title: "Reconhecimento em Comunidade Técnica"
 date: 2026-04-30
 category: "Reconhecimento"
-image: "/assets/img/premio3.png"
+image: "/assets/img/jorgemaia.jpg"
 excerpt: "Destaques por palestras, eventos e produção de conteúdo."
 ---
 

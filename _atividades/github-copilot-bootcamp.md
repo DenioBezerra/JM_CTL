@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Copilot Global Bootcamp"
 date: 2026-04-30
 category: "Atividade"
-image: "/assets/img/entrevistasyoutube.png"
+image: "/assets/img/githubcopilot.png"
 excerpt: "Evento para desenvolvedores sobre IA aplicada ao desenvolvimento."
 ---
 

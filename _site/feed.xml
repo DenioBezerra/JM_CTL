@@ -1,1 +1,477 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-BR"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/JM_CTL/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/JM_CTL/" rel="alternate" type="text/html" hreflang="pt-BR" /><updated>2026-04-30T17:24:04-03:00</updated><id>http://localhost:4000/JM_CTL/feed.xml</id><title type="html">Jorge Maia</title><subtitle>Tecnologia, inovação, IoT, inteligência artificial, negócios digitais, palestras, projetos e conteúdo técnico.</subtitle><entry><title type="html">Fabcon - Microsoft Fabric Community Conference</title><link href="http://localhost:4000/JM_CTL/eventos/2026/03/16/fabcon-microsoft-fabric/" rel="alternate" type="text/html" title="Fabcon - Microsoft Fabric Community Conference" /><published>2026-03-16T00:00:00-03:00</published><updated>2026-03-16T00:00:00-03:00</updated><id>http://localhost:4000/JM_CTL/eventos/2026/03/16/fabcon-microsoft-fabric</id><content type="html" xml:base="http://localhost:4000/JM_CTL/eventos/2026/03/16/fabcon-microsoft-fabric/"><![CDATA[<p>Resumo inicial sobre participação, aprendizados e conexões do evento. Substitua este texto pelo conteúdo real do artigo.</p>]]></content><author><name></name></author><category term="Eventos" /><summary type="html"><![CDATA[Resumo inicial sobre participação, aprendizados e conexões do evento. Substitua este texto pelo conteúdo real do artigo.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/JM_CTL/assets/img/protocoloyoutube.png" /><media:content medium="image" url="http://localhost:4000/JM_CTL/assets/img/protocoloyoutube.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Microsoft AI Tour São Paulo</title><link href="http://localhost:4000/JM_CTL/eventos/2026/02/11/microsoft-ai-tour-sao-paulo/" rel="alternate" type="text/html" title="Microsoft AI Tour São Paulo" /><published>2026-02-11T00:00:00-03:00</published><updated>2026-02-11T00:00:00-03:00</updated><id>http://localhost:4000/JM_CTL/eventos/2026/02/11/microsoft-ai-tour-sao-paulo</id><content type="html" xml:base="http://localhost:4000/JM_CTL/eventos/2026/02/11/microsoft-ai-tour-sao-paulo/"><![CDATA[<p>Texto inicial sobre tendências de inteligência artificial, comunidade e inovação no ecossistema Microsoft.</p>]]></content><author><name></name></author><category term="Eventos" /><summary type="html"><![CDATA[Texto inicial sobre tendências de inteligência artificial, comunidade e inovação no ecossistema Microsoft.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/JM_CTL/assets/img/entrevistasyoutube.png" /><media:content medium="image" url="http://localhost:4000/JM_CTL/assets/img/entrevistasyoutube.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Microsoft Ignite 2025</title><link href="http://localhost:4000/JM_CTL/tecnologia/2025/11/18/microsoft-ignite-2025/" rel="alternate" type="text/html" title="Microsoft Ignite 2025" /><published>2025-11-18T00:00:00-03:00</published><updated>2025-11-18T00:00:00-03:00</updated><id>http://localhost:4000/JM_CTL/tecnologia/2025/11/18/microsoft-ignite-2025</id><content type="html" xml:base="http://localhost:4000/JM_CTL/tecnologia/2025/11/18/microsoft-ignite-2025/"><![CDATA[<p>Destaques, anúncios e aprendizados do Microsoft Ignite para profissionais de tecnologia.</p>]]></content><author><name></name></author><category term="Tecnologia" /><summary type="html"><![CDATA[Destaques, anúncios e aprendizados do Microsoft Ignite para profissionais de tecnologia.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/JM_CTL/assets/img/eventosyoutube.png" /><media:content medium="image" url="http://localhost:4000/JM_CTL/assets/img/eventosyoutube.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-BR"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/JM_CTL/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/JM_CTL/" rel="alternate" type="text/html" hreflang="pt-BR" /><updated>2026-05-04T18:35:07-03:00</updated><id>http://localhost:4000/JM_CTL/feed.xml</id><title type="html">Jorge Maia</title><subtitle>Tecnologia, inovação, IoT, inteligência artificial, negócios digitais, palestras, projetos e conteúdo técnico.</subtitle><entry><title type="html">FabCon - Microsoft Fabric Community Conference</title><link href="http://localhost:4000/JM_CTL/eventos/2026/04/30/fabcon-microsoft-fabric/" rel="alternate" type="text/html" title="FabCon - Microsoft Fabric Community Conference" /><published>2026-04-30T00:00:00-03:00</published><updated>2026-04-30T00:00:00-03:00</updated><id>http://localhost:4000/JM_CTL/eventos/2026/04/30/fabcon-microsoft-fabric</id><content type="html" xml:base="http://localhost:4000/JM_CTL/eventos/2026/04/30/fabcon-microsoft-fabric/"><![CDATA[<h2 id="-uma-experiência-global-em-dados">🌎 Uma experiência global em dados</h2>
+
+<p>Participar do <strong>FabCon (Microsoft Fabric Community Conference)</strong> é estar no centro das discussões mais relevantes sobre dados, inteligência artificial e transformação digital.</p>
+
+<p>Mais do que um evento técnico, o FabCon representa um ponto de encontro entre:</p>
+<ul>
+  <li>especialistas</li>
+  <li>empresas</li>
+  <li>comunidades</li>
+  <li>e o futuro da tecnologia</li>
+</ul>
+
+<p><img src="/JM_CTL/assets/img/eventosyoutube.png" alt="FabCon Microsoft Fabric" /></p>
+
+<hr />
+
+<h2 id="-minha-visão-do-evento">🚀 Minha visão do evento</h2>
+
+<p>Estar presente nesse tipo de evento amplia a visão sobre o papel dos dados no mundo atual.</p>
+
+<p>O FabCon mostrou que estamos vivendo uma transição clara:</p>
+
+<blockquote>
+  <p>De dados isolados → para ecossistemas inteligentes e conectados</p>
+</blockquote>
+
+<p>A forma como empresas trabalham com dados está mudando completamente.</p>
+
+<hr />
+
+<h2 id="-microsoft-fabric-na-prática">📊 Microsoft Fabric na prática</h2>
+
+<p>O Microsoft Fabric se consolida como uma plataforma unificada que integra:</p>
+
+<ul>
+  <li>Engenharia de dados</li>
+  <li>Business Intelligence (Power BI)</li>
+  <li>Ciência de dados</li>
+  <li>Data warehousing</li>
+  <li>Governança</li>
+</ul>
+
+<p>Tudo em um único ambiente.</p>
+
+<p><img src="/JM_CTL/assets/img/protocoloyoutube.png" alt="Microsoft Fabric e dados" /></p>
+
+<hr />
+
+<h2 id="-insights-estratégicos-do-evento">🧠 Insights estratégicos do evento</h2>
+
+<div class="post-highlight">
+
+💡 **Dados são o novo centro das decisões**
+<br />
+Empresas estão deixando de apenas coletar dados e passando a usá-los de forma estratégica.
+
+</div>
+
+<div class="post-highlight">
+
+⚡ **IA integrada ao fluxo de dados**
+<br />
+A inteligência artificial está sendo aplicada diretamente na análise e interpretação dos dados.
+
+</div>
+
+<div class="post-highlight">
+
+🔗 **Integração é mais importante que ferramenta**
+<br />
+O foco não é mais qual ferramenta usar, mas como conectar tudo de forma eficiente.
+
+</div>
+
+<hr />
+
+<h2 id="-comunidade-e-conexões">🤝 Comunidade e conexões</h2>
+
+<p>Um dos pontos mais fortes do FabCon é o networking.</p>
+
+<ul>
+  <li>troca de experiências reais</li>
+  <li>contato com profissionais globais</li>
+  <li>proximidade com especialistas da Microsoft</li>
+</ul>
+
+<p>Tecnologia cresce muito mais rápido quando existe comunidade.</p>
+
+<hr />
+
+<h2 id="-impacto-na-carreira">💼 Impacto na carreira</h2>
+
+<p>O evento reforçou uma mudança importante:</p>
+
+<p>👉 O profissional de tecnologia precisa evoluir para um perfil mais estratégico</p>
+
+<p>Competências essenciais:</p>
+
+<ul>
+  <li>pensamento orientado a dados</li>
+  <li>conhecimento em cloud</li>
+  <li>visão de negócio</li>
+  <li>capacidade de adaptação</li>
+</ul>
+
+<hr />
+
+<h2 id="-linha-do-tempo-da-experiência">🧭 Linha do tempo da experiência</h2>
+
+<h3 id="-imersão">📍 Imersão</h3>
+<p>Conteúdos técnicos, palestras e demonstrações práticas.</p>
+
+<h3 id="-conexão">📍 Conexão</h3>
+<p>Interação com profissionais e troca de experiências.</p>
+
+<h3 id="-visão">📍 Visão</h3>
+<p>Entendimento claro do futuro dos dados e da tecnologia.</p>
+
+<hr />
+
+<h2 id="-principais-aprendizados">🔥 Principais aprendizados</h2>
+
+<ul>
+  <li>Microsoft Fabric está consolidando o ecossistema de dados</li>
+  <li>IA aplicada a dados é o novo padrão</li>
+  <li>Integração entre ferramentas é essencial</li>
+  <li>Comunidade acelera crescimento profissional</li>
+  <li>Dados são o ativo mais estratégico das empresas</li>
+</ul>
+
+<hr />
+
+<h2 id="-conclusão">🚀 Conclusão</h2>
+
+<p>O FabCon deixou claro que o futuro da tecnologia será guiado por dados inteligentes.</p>
+
+<p>A combinação de:</p>
+
+<p>👉 Data + IA + Cloud + Negócio</p>
+
+<p>define o novo cenário.</p>
+
+<p>Quem entender isso agora estará à frente nos próximos anos.</p>
+
+<hr />
+
+<h2 id="-continue-explorando">📌 Continue explorando</h2>
+
+<ul>
+  <li>Artigos técnicos sobre dados e Azure</li>
+  <li>Projetos com IoT e analytics</li>
+  <li>Episódios do JorgeCast sobre inovação</li>
+</ul>]]></content><author><name></name></author><category term="Eventos" /><summary type="html"><![CDATA[Uma experiência imersiva no principal evento global de dados e analytics do ecossistema Microsoft Fabric.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/JM_CTL/assets/img/fabcon.webp" /><media:content medium="image" url="http://localhost:4000/JM_CTL/assets/img/fabcon.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Microsoft Ignite 2025</title><link href="http://localhost:4000/JM_CTL/tecnologia/2026/04/30/microsoft-ignite-2025/" rel="alternate" type="text/html" title="Microsoft Ignite 2025" /><published>2026-04-30T00:00:00-03:00</published><updated>2026-04-30T00:00:00-03:00</updated><id>http://localhost:4000/JM_CTL/tecnologia/2026/04/30/microsoft-ignite-2025</id><content type="html" xml:base="http://localhost:4000/JM_CTL/tecnologia/2026/04/30/microsoft-ignite-2025/"><![CDATA[<h2 id="-o-evento-que-define-o-rumo-da-tecnologia">🌎 O evento que define o rumo da tecnologia</h2>
+
+<p>O <strong>Microsoft Ignite 2025</strong> não foi apenas um evento — foi um posicionamento claro sobre o futuro da tecnologia.</p>
+
+<p>A Microsoft mostrou que estamos entrando em uma nova fase, onde:</p>
+
+<blockquote>
+  <p>Inteligência Artificial deixa de ser tendência e passa a ser infraestrutura de negócio.</p>
+</blockquote>
+
+<p><img src="/JM_CTL/assets/img/eventosyoutube.png" alt="Microsoft Ignite 2025" /></p>
+
+<hr />
+
+<h2 id="-minha-leitura-do-ignite-2025">🚀 Minha leitura do Ignite 2025</h2>
+
+<p>O que mais chamou atenção não foram apenas os anúncios, mas a direção estratégica:</p>
+
+<ul>
+  <li>IA integrada em todos os produtos</li>
+  <li>Cloud como base universal</li>
+  <li>Dados como ativo central</li>
+</ul>
+
+<p>Estamos vivendo uma mudança estrutural no mercado.</p>
+
+<hr />
+
+<h2 id="-insights-estratégicos-do-evento">🧠 Insights estratégicos do evento</h2>
+
+<div class="post-highlight">
+
+💡 **IA como camada padrão**
+<br />
+A inteligência artificial não é mais um diferencial — ela está se tornando padrão em todas as soluções.
+
+</div>
+
+<div class="post-highlight">
+
+⚡ **Copilot como interface do futuro**
+<br />
+A interação com sistemas está migrando para assistentes inteligentes.
+
+</div>
+
+<div class="post-highlight">
+
+🔗 **Tudo conectado**
+<br />
+Dados, aplicações, usuários e processos estão sendo integrados em um único fluxo inteligente.
+
+</div>
+
+<hr />
+
+<h2 id="-a-evolução-do-copilot">🤖 A evolução do Copilot</h2>
+
+<p>O <strong>Microsoft Copilot</strong> foi um dos grandes protagonistas.</p>
+
+<p>Principais avanços:</p>
+
+<ul>
+  <li>GitHub Copilot mais inteligente e contextual</li>
+  <li>Copilot no Microsoft 365 automatizando tarefas</li>
+  <li>Integração com Azure para análises em tempo real</li>
+</ul>
+
+<p>👉 O Copilot deixa de ser ferramenta e passa a ser <strong>parceiro de produtividade</strong>.</p>
+
+<hr />
+
+<h2 id="️-azure-como-base-da-nova-era">☁️ Azure como base da nova era</h2>
+
+<p>O Azure se consolida como o pilar da inovação:</p>
+
+<ul>
+  <li>Infraestrutura escalável</li>
+  <li>Serviços de IA integrados</li>
+  <li>Processamento de dados em tempo real</li>
+  <li>Arquitetura preparada para o futuro</li>
+</ul>
+
+<p><img src="/JM_CTL/assets/img/protocoloyoutube.png" alt="Azure e inovação" /></p>
+
+<hr />
+
+<h2 id="-segurança-como-fundamento">🔐 Segurança como fundamento</h2>
+
+<p>A Microsoft reforçou um ponto essencial:</p>
+
+<p>👉 Não existe inovação sem segurança.</p>
+
+<p>Destaques:</p>
+
+<ul>
+  <li>Zero Trust como padrão</li>
+  <li>IA aplicada à segurança</li>
+  <li>Monitoramento contínuo</li>
+  <li>Governança de dados distribuídos</li>
+</ul>
+
+<hr />
+
+<h2 id="-o-novo-perfil-do-profissional-de-tecnologia">💼 O novo perfil do profissional de tecnologia</h2>
+
+<p>O Ignite trouxe um recado claro:</p>
+
+<blockquote>
+  <p>O profissional técnico agora precisa pensar como estrategista.</p>
+</blockquote>
+
+<p>Competências essenciais:</p>
+
+<ul>
+  <li>IA aplicada ao negócio</li>
+  <li>Cloud e arquitetura moderna</li>
+  <li>Pensamento orientado a dados</li>
+  <li>Capacidade de adaptação</li>
+</ul>
+
+<hr />
+
+<h2 id="-a-nova-arquitetura-da-tecnologia">🧭 A nova arquitetura da tecnologia</h2>
+
+<p>O que está se formando é um novo modelo:</p>
+
+<h3 id="-ia">📍 IA</h3>
+<p>Processamento e inteligência</p>
+
+<h3 id="-cloud">📍 Cloud</h3>
+<p>Infraestrutura e escalabilidade</p>
+
+<h3 id="-dados">📍 Dados</h3>
+<p>Base para decisões</p>
+
+<h3 id="-negócio">📍 Negócio</h3>
+<p>Aplicação prática</p>
+
+<p>👉 Tudo integrado.</p>
+
+<hr />
+
+<h2 id="-principais-aprendizados">🔥 Principais aprendizados</h2>
+
+<ul>
+  <li>IA se tornou infraestrutura</li>
+  <li>Copilot redefine produtividade</li>
+  <li>Azure é base da transformação digital</li>
+  <li>Segurança é prioridade estratégica</li>
+  <li>Dados são o novo ativo central</li>
+</ul>
+
+<hr />
+
+<h2 id="-conclusão">🚀 Conclusão</h2>
+
+<p>O Microsoft Ignite 2025 mostrou que não estamos evoluindo gradualmente.</p>
+
+<p>Estamos mudando de paradigma.</p>
+
+<p>A combinação de:</p>
+
+<p>👉 IA + Cloud + Dados + Negócio</p>
+
+<p>define o futuro da tecnologia.</p>
+
+<p>Quem entender isso agora não apenas acompanha o mercado — lidera.</p>
+
+<hr />
+
+<h2 id="-continue-explorando">📌 Continue explorando</h2>
+
+<ul>
+  <li>Artigos técnicos sobre IA e Azure</li>
+  <li>Projetos com IoT e inovação</li>
+  <li>Episódios do JorgeCast sobre tecnologia</li>
+</ul>]]></content><author><name></name></author><category term="Tecnologia" /><summary type="html"><![CDATA[Uma leitura estratégica dos principais anúncios e tendências do Microsoft Ignite 2025.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/JM_CTL/assets/img/ignite.webp" /><media:content medium="image" url="http://localhost:4000/JM_CTL/assets/img/ignite.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Microsoft AI Tour São Paulo</title><link href="http://localhost:4000/JM_CTL/eventos/2026/04/30/microsoft-ai-tour-sao-paulo/" rel="alternate" type="text/html" title="Microsoft AI Tour São Paulo" /><published>2026-04-30T00:00:00-03:00</published><updated>2026-04-30T00:00:00-03:00</updated><id>http://localhost:4000/JM_CTL/eventos/2026/04/30/microsoft-ai-tour-sao-paulo</id><content type="html" xml:base="http://localhost:4000/JM_CTL/eventos/2026/04/30/microsoft-ai-tour-sao-paulo/"><![CDATA[<h2 id="-um-marco-para-a-inteligência-artificial-no-brasil">🌎 Um marco para a Inteligência Artificial no Brasil</h2>
+
+<p>O <strong>Microsoft AI Tour São Paulo</strong> reuniu líderes, especialistas e comunidades para discutir o papel da inteligência artificial no presente e no futuro das organizações.</p>
+
+<p>Mais do que um evento, foi um sinal claro de que estamos vivendo uma mudança estrutural na forma como empresas utilizam tecnologia.</p>
+
+<p><img src="/JM_CTL/assets/img/eventosyoutube.png" alt="Microsoft AI Tour São Paulo" /></p>
+
+<hr />
+
+<h2 id="-minha-leitura-do-evento">🚀 Minha leitura do evento</h2>
+
+<p>Participar desse tipo de evento amplia a visão sobre o impacto real da tecnologia.</p>
+
+<p>O que ficou evidente:</p>
+
+<blockquote>
+  <p>Não estamos mais falando sobre adoção de IA — estamos falando sobre transformação de negócio com IA.</p>
+</blockquote>
+
+<p>A tecnologia deixou de ser suporte e passou a ser protagonista.</p>
+
+<hr />
+
+<h2 id="-insights-estratégicos">🧠 Insights estratégicos</h2>
+
+<div class="post-highlight">
+
+💡 **IA como motor de decisões**
+<br />
+Empresas estão utilizando inteligência artificial para tomar decisões mais rápidas e precisas.
+
+</div>
+
+<div class="post-highlight">
+
+⚡ **Copilot redefinindo produtividade**
+<br />
+Ferramentas assistidas por IA estão mudando a forma como desenvolvedores e empresas trabalham.
+
+</div>
+
+<div class="post-highlight">
+
+🔗 **Integração total entre dados, cloud e aplicações**
+<br />
+O valor está na conexão entre sistemas, não em soluções isoladas.
+
+</div>
+
+<hr />
+
+<h2 id="️-azure-como-base-da-inovação">☁️ Azure como base da inovação</h2>
+
+<p>O Microsoft Azure foi apresentado como a base para construção de soluções modernas:</p>
+
+<ul>
+  <li>Infraestrutura escalável</li>
+  <li>Serviços de IA integrados</li>
+  <li>Processamento de dados em tempo real</li>
+  <li>Segurança e governança</li>
+</ul>
+
+<p><img src="/JM_CTL/assets/img/protocoloyoutube.png" alt="Azure e Inteligência Artificial" /></p>
+
+<hr />
+
+<h2 id="-comunidade-como-acelerador">🤝 Comunidade como acelerador</h2>
+
+<p>Um dos maiores diferenciais do evento foi o fortalecimento da comunidade.</p>
+
+<ul>
+  <li>Conexões reais com profissionais</li>
+  <li>Troca de experiências práticas</li>
+  <li>Proximidade com especialistas</li>
+</ul>
+
+<blockquote>
+  <p>Tecnologia cresce mais rápido quando existe colaboração.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="-o-novo-perfil-do-profissional-de-tecnologia">💼 O novo perfil do profissional de tecnologia</h2>
+
+<p>O evento deixou claro que o mercado mudou.</p>
+
+<p>Hoje, não basta apenas desenvolver.</p>
+
+<p>É preciso:</p>
+
+<ul>
+  <li>Pensar estrategicamente</li>
+  <li>Entender o negócio</li>
+  <li>Trabalhar com dados</li>
+  <li>Utilizar IA de forma prática</li>
+</ul>
+
+<p>👉 O profissional virou um <strong>agente de transformação</strong></p>
+
+<hr />
+
+<h2 id="-jornada-dentro-do-evento">🧭 Jornada dentro do evento</h2>
+
+<h3 id="-imersão">📍 Imersão</h3>
+<p>Conteúdos técnicos e demonstrações práticas.</p>
+
+<h3 id="-conexão">📍 Conexão</h3>
+<p>Networking com profissionais e especialistas.</p>
+
+<h3 id="-visão">📍 Visão</h3>
+<p>Clareza sobre o futuro da tecnologia.</p>
+
+<hr />
+
+<h2 id="-principais-aprendizados">🔥 Principais aprendizados</h2>
+
+<ul>
+  <li>IA já é parte do negócio</li>
+  <li>Copilot está redefinindo produtividade</li>
+  <li>Azure é fundamental na transformação digital</li>
+  <li>Dados são o novo ativo estratégico</li>
+  <li>Comunidade acelera crescimento</li>
+</ul>
+
+<hr />
+
+<h2 id="-conclusão">🚀 Conclusão</h2>
+
+<p>O Microsoft AI Tour São Paulo mostrou que estamos entrando em uma nova fase da tecnologia.</p>
+
+<p>A combinação de:</p>
+
+<p>👉 IA + Cloud + Dados + Negócio</p>
+
+<p>define o futuro.</p>
+
+<p>Quem entender isso agora terá uma vantagem competitiva real.</p>
+
+<hr />
+
+<h2 id="-continue-explorando">📌 Continue explorando</h2>
+
+<ul>
+  <li>Artigos técnicos sobre IA e Azure</li>
+  <li>Projetos com inovação digital</li>
+  <li>Episódios do JorgeCast sobre tecnologia</li>
+</ul>]]></content><author><name></name></author><category term="Eventos" /><summary type="html"><![CDATA[Uma imersão no Microsoft AI Tour São Paulo com insights estratégicos sobre IA, cloud e o futuro dos negócios.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/JM_CTL/assets/img/microsoftAItuor.webp" /><media:content medium="image" url="http://localhost:4000/JM_CTL/assets/img/microsoftAItuor.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

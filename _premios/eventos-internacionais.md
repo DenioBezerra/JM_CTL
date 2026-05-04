@@ -3,7 +3,7 @@ layout: post
 title: "Participações Internacionais"
 date: 2026-04-30
 category: "Reconhecimento"
-image: "/assets/img/premio.png"
+image: "/assets/img/jorgemaia5.png"
 excerpt: "Presença em eventos, conferências e iniciativas globais de tecnologia."
 ---
 

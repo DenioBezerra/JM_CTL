@@ -3,7 +3,7 @@ layout: post
 title: "Palestra IoT e Cloud"
 date: 2026-04-30
 category: "Atividade"
-image: "/assets/img/protocoloyoutube.png"
+image: "/assets/img/jorgemaia3.webp"
 excerpt: "Conteúdo sobre dispositivos conectados, dados e nuvem."
 ---
 

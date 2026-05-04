@@ -3,7 +3,7 @@ layout: post
 title: "Gêmeos digitais e negócios conectados"
 date: 2026-04-30
 category: "Artigos Técnicos"
-image: "/assets/img/entrevistasyoutube.png"
+image: "/assets/img/jorgemaia3.webp"
 excerpt: "Uma visão prática sobre digital twins, IoT, dados e estratégia."
 ---
 

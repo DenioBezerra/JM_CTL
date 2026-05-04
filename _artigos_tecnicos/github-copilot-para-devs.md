@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Copilot para desenvolvedores"
 date: 2026-04-30
 category: "Técnico"
-image: "/assets/img/protocoloyoutube.png"
+image: "/assets/img/githubcopilot.png"
 excerpt: "Como usar IA para acelerar estudos, produtividade e qualidade de código."
 ---
 

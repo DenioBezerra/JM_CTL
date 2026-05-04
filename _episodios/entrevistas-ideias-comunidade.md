@@ -3,7 +3,7 @@ layout: post
 title: "Entrevistas, ideias e comunidade"
 date: 2026-04-30
 category: "JorgeCast"
-image: "/assets/img/jorgecastsemfundo.png"
+image: "/assets/img/jorgemaiapalestra.jpg"
 excerpt: "Conteúdo para aproximar pessoas, experiências e conhecimento técnico."
 ---
 

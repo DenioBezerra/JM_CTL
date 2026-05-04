@@ -3,7 +3,7 @@ layout: post
 title: "Microsoft AI Tour São Paulo"
 date: 2026-04-30
 category: "Atividade"
-image: "/assets/img/eventosyoutube.png"
+image: "/assets/img/microsoftAItuor.webp"
 excerpt: "Participação em evento de inteligência artificial, inovação e comunidade."
 ---
 

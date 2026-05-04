@@ -3,7 +3,7 @@ layout: post
 title: "Microsoft MVP Azure"
 date: 2026-04-30
 category: "Reconhecimento"
-image: "/assets/img/premio2.png"
+image: "/assets/img/premio.png"
 excerpt: "Reconhecimento por contribuição técnica e atuação em comunidade."
 ---
 
