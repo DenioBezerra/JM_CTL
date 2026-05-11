@@ -7,7 +7,7 @@ description: Textos, opiniões, experiências e publicações recentes.
 <section class="articles-premium">
 
   <!-- HERO -->
-  <div class="articles-hero">
+  <div class="articles-hero mouse-glow">
     <div>
       <span class="eyebrow">Conteúdo</span>
 
@@ -62,7 +62,7 @@ description: Textos, opiniões, experiências e publicações recentes.
 
     {% for post in site.posts %}
 
-    <a class="article-card" href="{{ post.url | relative_url }}">
+    <a class="article-card mouse-glow" href="{{ post.url | relative_url }}">
 
       <div class="article-img">
         {% if post.image %}

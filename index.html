@@ -3,20 +3,21 @@ layout: default
 title: Home
 ---
 
-<section class="hero home-hero">
-  <div class="hero-bg-glow"></div>
+<section class="hero hero-ultra">
+  <div class="hero-orb hero-orb-one"></div>
+  <div class="hero-orb hero-orb-two"></div>
 
-  <div class="container home-hero-grid">
-    <div class="hero-content reveal">
-      <span class="eyebrow">Tecnologia • Inovação • Comunidade</span>
+  <div class="container hero-ultra-grid">
+    <div class="hero-ultra-copy reveal">
+      <span class="eyebrow">Tecnologia • Inovação • Autoridade Digital</span>
 
       <h1>
-        Transformando tecnologia em
-        <span class="gradient-text">conexões reais.</span>
+        Conectando tecnologia,
+        <span class="gradient-text">negócios e futuro.</span>
       </h1>
 
       <p class="lead">
-        Conteúdo, palestras, projetos e experiências sobre IoT, cloud,
+        Conteúdo, projetos, palestras e experiências sobre IoT, cloud,
         inteligência artificial e transformação digital.
       </p>
 
@@ -25,66 +26,36 @@ title: Home
         <a class="btn secondary" href="{{ '/projetos/' | relative_url }}">Ver projetos</a>
       </div>
 
-      <div class="stats">
-        <div class="stat">
+      <div class="hero-ultra-stats">
+        <div>
           <strong>25+</strong>
-          <span>anos de experiência</span>
+          <span>anos de tecnologia</span>
         </div>
-
-        <div class="stat">
+        <div>
           <strong>MVP</strong>
           <span>reconhecimento Microsoft</span>
         </div>
-
-        <div class="stat">
+        <div>
           <strong>IoT</strong>
           <span>cloud, IA e inovação</span>
         </div>
       </div>
     </div>
 
-    <div class="hero-visual reveal">
-      <div class="hero-image-frame">
-        <img src="{{ '/assets/img/jorgemaia.jpg' | relative_url }}" alt="Jorge Maia palestrando">
+    <div class="hero-ultra-visual reveal">
+      <div class="hero-tech-frame">
+        <img src="{{ '/assets/img/jorgemaia.jpg' | relative_url }}" alt="Jorge Maia">
       </div>
 
-      <div class="hero-badge hero-badge-main">
+      <div class="hero-floating hero-floating-main">
         <strong>Autoridade em tecnologia</strong>
         <span>Conteúdo, inovação e comunidade</span>
       </div>
 
-      <div class="hero-badge hero-badge-small">
-        <strong>+ Projetos</strong>
-        <span>Cloud • IA • IoT</span>
+      <div class="hero-floating hero-floating-mini">
+        <strong>Azure • IA • IoT</strong>
+        <span>ecossistema conectado</span>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section home-about">
-  <div class="container about-premium">
-    <div class="about-image-card reveal">
-      <img src="{{ '/assets/img/jorgemaia2.webp' | relative_url }}" alt="Jorge Maia">
-    </div>
-
-    <div class="about-copy reveal">
-      <span class="eyebrow">Sobre</span>
-
-      <h2>Uma trajetória construída entre tecnologia, comunicação e impacto.</h2>
-
-      <p>
-        Jorge Maia conecta comunidades, empresas e profissionais por meio de conteúdo,
-        palestras, consultoria, podcasts e projetos digitais com linguagem clara,
-        visão estratégica e foco em inovação.
-      </p>
-
-      <div class="about-list">
-        <span>Cloud e transformação digital</span>
-        <span>IoT, inteligência artificial e dados</span>
-        <span>Conteúdo, eventos e comunidades</span>
-      </div>
-
-      <a class="btn secondary" href="{{ '/sobre/' | relative_url }}">Ler mais sobre Jorge</a>
     </div>
   </div>
 </section>
@@ -153,10 +124,10 @@ title: Home
       <a class="btn secondary" href="{{ '/artigos/' | relative_url }}">Ver todos</a>
     </div>
 
-    <div class="articles-grid">
+    <div class="insights-grid">
       {% for post in site.posts limit:3 %}
-        <a class="article-card reveal" href="{{ post.url | relative_url }}">
-          <div class="article-image">
+        <a class="insight-card reveal" href="{{ post.url | relative_url }}">
+          <div class="insight-image">
             {% if post.image %}
               <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
             {% else %}
@@ -164,12 +135,12 @@ title: Home
             {% endif %}
           </div>
 
-          <div class="article-content">
+          <div class="insight-content">
             <span>{{ post.category | default: 'Artigo' }}</span>
             <h3>{{ post.title }}</h3>
             <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
 
-            <div class="article-footer">
+            <div class="insight-footer">
               <small>{{ post.date | date: "%d/%m/%Y" }}</small>
               <strong>Ler artigo →</strong>
             </div>

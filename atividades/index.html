@@ -7,7 +7,7 @@ description: Eventos, palestras, workshops, encontros e participações.
 <section class="agenda-premium">
 
   <!-- INTRO -->
-  <div class="agenda-hero">
+  <div class="agenda-hero mouse-glow">
     <div>
       <span class="eyebrow">Agenda profissional</span>
 
@@ -25,7 +25,7 @@ description: Eventos, palestras, workshops, encontros e participações.
   <!-- DESTAQUES -->
   <div class="agenda-highlights">
 
-    <a class="agenda-highlight-card">
+    <a class="agenda-highlight-card mouse-glow">
       <img src="{{ '/assets/img/eventosyoutube.png' | relative_url }}">
       <div>
         <span>Palestras</span>
@@ -34,7 +34,7 @@ description: Eventos, palestras, workshops, encontros e participações.
       </div>
     </a>
 
-    <a class="agenda-highlight-card">
+    <a class="agenda-highlight-card mouse-glow">
       <img src="{{ '/assets/img/jorgemaiabigode.webp' | relative_url }}">
       <div>
         <span>Conteúdo</span>
@@ -55,7 +55,7 @@ description: Eventos, palestras, workshops, encontros e participações.
 
     {% for item in site.atividades %}
 
-    <a class="agenda-card" href="{{ item.url | relative_url }}">
+    <a class="agenda-card mouse-glow" href="{{ item.url | relative_url }}">
 
       <div class="agenda-img">
         {% if item.image %}

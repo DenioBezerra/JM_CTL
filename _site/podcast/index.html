@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
@@ -27,8 +27,9 @@
   <link rel="stylesheet" href="/JM_CTL/assets/css/main.css">
 </head>
 
-  <body>
-    <header class="site-header" data-header>
+
+<body>
+  <header class="site-header" data-header>
   <div class="container header-container">
 
     <a class="brand" href="/JM_CTL/" aria-label="Página inicial">
@@ -58,7 +59,7 @@
   </div>
 </header>
 
-    <main><section class="page-hero">
+  <main><section class="page-hero">
   <div class="container narrow reveal">
     <span class="eyebrow">Jorge Maia</span>
     <h1>JorgeCast</h1>
@@ -66,9 +67,9 @@
   </div>
 </section>
 <section class="section"><div class="container content-body reveal"><section class="podcast-page-premium">
-  <div class="podcast-hero-card">
+  <div class="podcast-hero-card mouse-glow">
     <div class="podcast-hero-copy">
-      <span class="eyebrow">JorgeCast</span>
+      <span class="eyebrow mouse-glow">JorgeCast</span>
 
       <h2>Conversas sobre tecnologia, carreira, inovação e comunidade.</h2>
 
@@ -89,23 +90,25 @@
   </div>
 
   <div class="podcast-section-title">
-    <span class="eyebrow">Temporadas e episódios</span>
+    <span class="eyebrow mouse-glow">Temporadas e episódios</span>
     <h2>Destaques do JorgeCast</h2>
   </div>
 
-  <div class="podcast-episodes-grid">
+  <div class="podcast-episodes-grid mouse-glow">
   
-  <a class="podcast-episode-card" href="/JM_CTL/podcast/jorgecast-s9e5-blockchain-iot/" target="_blank">
+  <a class="podcast-episode-card mouse-glow" href="/JM_CTL/podcast/jorgecast-s9e5-blockchain-iot/" target="_blank">
     <img src="/JM_CTL/assets/img/jorgecasts9e4.png" alt="JorgeCast episódio">
     <div>
       <span>Episódio</span>
       <h3>Conversas sobre tecnologia e mercado</h3>
-      <p>Debates sobre inovação, carreira, comunidade e os movimentos do setor de tecnologia.</p>
+      <p>Debates sobre inovação, carreira, comunidade e os movime
+        
+        ntos do setor de tecnologia.</p>
       <strong>Assistir episódio →</strong>
     </div>
   </a>
 
-  <a class="podcast-episode-card" href="/JM_CTL/podcast/existe-o-novo-normal/" target="_blank">
+  <a class="podcast-episode-card mouse-glow" href="/JM_CTL/podcast/existe-o-novo-normal/" target="_blank">
     <img src="/JM_CTL/assets/img/jorgecastS9E5.png" alt="JorgeCast episódio">
     <div>
       <span>JorgeCast</span>
@@ -115,7 +118,7 @@
     </div>
   </a>
 
-  <a class="podcast-episode-card" href="/JM_CTL/podcast/entrevistas-ideias-comunidade/" target="_blank">
+  <a class="podcast-episode-card mouse-glow" href="/JM_CTL/podcast/entrevistas-ideias-comunidade/" target="_blank">
     <img src="/JM_CTL/assets/img/jorgemaiapalestra.jpg" alt="JorgeCast">
     <div>
       <span>Podcast</span>
@@ -128,7 +131,7 @@
 </div>
 </section></div></section>
 </main>
-    <footer class="site-footer footer-premium">
+  <footer class="site-footer footer-premium">
   <div class="container footer-main">
     <div class="footer-brand">
       <a href="/JM_CTL/" class="footer-logo">
@@ -187,6 +190,23 @@
   </div>
 </footer>
 
-    <script src="/JM_CTL/assets/js/main.js"></script>
-  </body>
+  <script src="/JM_CTL/assets/js/main.js"></script>
+  <script>
+    document.querySelectorAll('.mouse-glow').forEach(card => {
+
+      card.addEventListener('mousemove', e => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+      });
+
+    });
+  </script>
+</body>
+
 </html>

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
@@ -27,8 +27,9 @@
   <link rel="stylesheet" href="/JM_CTL/assets/css/main.css">
 </head>
 
-  <body>
-    <header class="site-header" data-header>
+
+<body>
+  <header class="site-header" data-header>
   <div class="container header-container">
 
     <a class="brand" href="/JM_CTL/" aria-label="Página inicial">
@@ -58,7 +59,7 @@
   </div>
 </header>
 
-    <main><section class="page-hero">
+  <main><section class="page-hero">
   <div class="container narrow reveal">
     <span class="eyebrow">Jorge Maia</span>
     <h1>Projetos e Empresas</h1>
@@ -66,9 +67,9 @@
   </div>
 </section>
 <section class="section"><div class="container content-body reveal"><section class="projects-page-premium">
-  <div class="projects-intro">
+  <div class="projects-intro mouse-glow">
     <div>
-      <span class="eyebrow">Ecossistema</span>
+      <span class="eyebrow mouse-glow">Ecossistema</span>
       <h2>Projetos que conectam tecnologia, conteúdo e comunidade.</h2>
       <p>
         Uma visão integrada das iniciativas ligadas à atuação profissional de Jorge Maia:
@@ -79,7 +80,7 @@
     <img src="/JM_CTL/assets/img/ctl.png" alt="CrazyTechLabs">
   </div>
 
-  <div class="projects-feature-grid">
+  <div class="projects-feature-grid mouse-glow">
     <a class="project-feature-card large" href="/JM_CTL/projetos/">
       <img src="/JM_CTL/assets/img/ctl.png" alt="CrazyTechLabs">
       <div>
@@ -89,7 +90,7 @@
       </div>
     </a>
 
-    <a class="project-feature-card" href="/JM_CTL/podcast/">
+    <a class="project-feature-card mouse-glow" href="/JM_CTL/podcast/">
       <img src="/JM_CTL/assets/img/jorgecastsemfundo.png" alt="JorgeCast">
       <div>
         <span>Podcast</span>
@@ -98,7 +99,7 @@
       </div>
     </a>
 
-    <a class="project-feature-card" href="/JM_CTL/youtube/">
+    <a class="project-feature-card mouse-glow" href="/JM_CTL/youtube/">
       <img src="/JM_CTL/assets/img/jorgemaiayoutube.png" alt="YouTube">
       <div>
         <span>Canal</span>
@@ -115,7 +116,7 @@
 
   <div class="projects-list-premium">
     
-      <a class="project-list-card" href="/JM_CTL/projetos/canal-youtube/">
+      <a class="project-list-card mouse-glow" href="/JM_CTL/projetos/canal-youtube/">
         <div class="project-list-image">
           
             <img src="/JM_CTL/assets/img/jorgemaiayoutube.png" alt="Canal no YouTube">
@@ -130,7 +131,7 @@
         </div>
       </a>
     
-      <a class="project-list-card" href="/JM_CTL/projetos/crazytechlabs/">
+      <a class="project-list-card mouse-glow" href="/JM_CTL/projetos/crazytechlabs/">
         <div class="project-list-image">
           
             <img src="/JM_CTL/assets/img/ctllogo.jpg" alt="CrazyTechLabs">
@@ -145,7 +146,7 @@
         </div>
       </a>
     
-      <a class="project-list-card" href="/JM_CTL/projetos/jorgecast/">
+      <a class="project-list-card mouse-glow" href="/JM_CTL/projetos/jorgecast/">
         <div class="project-list-image">
           
             <img src="/JM_CTL/assets/img/jorgecastsemfundo.png" alt="JorgeCast">
@@ -163,7 +164,7 @@
   </div>
 </section></div></section>
 </main>
-    <footer class="site-footer footer-premium">
+  <footer class="site-footer footer-premium">
   <div class="container footer-main">
     <div class="footer-brand">
       <a href="/JM_CTL/" class="footer-logo">
@@ -222,6 +223,23 @@
   </div>
 </footer>
 
-    <script src="/JM_CTL/assets/js/main.js"></script>
-  </body>
+  <script src="/JM_CTL/assets/js/main.js"></script>
+  <script>
+    document.querySelectorAll('.mouse-glow').forEach(card => {
+
+      card.addEventListener('mousemove', e => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+      });
+
+    });
+  </script>
+</body>
+
 </html>

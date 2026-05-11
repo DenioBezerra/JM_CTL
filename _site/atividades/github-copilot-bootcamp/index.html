@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
@@ -30,8 +30,9 @@
   <link rel="stylesheet" href="/JM_CTL/assets/css/main.css">
 </head>
 
-  <body>
-    <header class="site-header" data-header>
+
+<body>
+  <header class="site-header" data-header>
   <div class="container header-container">
 
     <a class="brand" href="/JM_CTL/" aria-label="Página inicial">
@@ -61,7 +62,7 @@
   </div>
 </header>
 
-    <main><article class="post-premium">
+  <main><article class="post-premium">
 
   <header class="post-premium-hero">
     <div class="container post-premium-grid">
@@ -131,7 +132,7 @@
 
 </article>
 </main>
-    <footer class="site-footer footer-premium">
+  <footer class="site-footer footer-premium">
   <div class="container footer-main">
     <div class="footer-brand">
       <a href="/JM_CTL/" class="footer-logo">
@@ -190,6 +191,23 @@
   </div>
 </footer>
 
-    <script src="/JM_CTL/assets/js/main.js"></script>
-  </body>
+  <script src="/JM_CTL/assets/js/main.js"></script>
+  <script>
+    document.querySelectorAll('.mouse-glow').forEach(card => {
+
+      card.addEventListener('mousemove', e => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+      });
+
+    });
+  </script>
+</body>
+
 </html>

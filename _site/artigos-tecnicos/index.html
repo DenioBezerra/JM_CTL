@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
@@ -27,8 +27,9 @@
   <link rel="stylesheet" href="/JM_CTL/assets/css/main.css">
 </head>
 
-  <body>
-    <header class="site-header" data-header>
+
+<body>
+  <header class="site-header" data-header>
   <div class="container header-container">
 
     <a class="brand" href="/JM_CTL/" aria-label="Página inicial">
@@ -58,7 +59,7 @@
   </div>
 </header>
 
-    <main><section class="page-hero">
+  <main><section class="page-hero">
   <div class="container narrow reveal">
     <span class="eyebrow">Jorge Maia</span>
     <h1>Artigos Técnicos</h1>
@@ -67,7 +68,7 @@
 </section>
 <section class="section"><div class="container content-body reveal"><section class="technical-page-premium">
 
-  <div class="technical-hero">
+  <div class="technical-hero mouse-glow">
     <div>
       <span class="eyebrow">Conteúdo técnico</span>
 
@@ -82,7 +83,7 @@
     <img src="/JM_CTL/assets/img/jorgemaia9.png" alt="Conteúdo técnico">
   </div>
 
-  <div class="technical-topics">
+  <div class="technical-topics mouse-glow">
     <div>
       <strong>Cloud</strong>
       <span>arquitetura e serviços</span>
@@ -109,7 +110,7 @@
     <h2>Conteúdos recentes</h2>
   </div>
 
-  <div class="technical-list">
+  <div class="technical-list mouse-glow">
 
     
 
@@ -174,7 +175,7 @@
 
 </section></div></section>
 </main>
-    <footer class="site-footer footer-premium">
+  <footer class="site-footer footer-premium">
   <div class="container footer-main">
     <div class="footer-brand">
       <a href="/JM_CTL/" class="footer-logo">
@@ -233,6 +234,23 @@
   </div>
 </footer>
 
-    <script src="/JM_CTL/assets/js/main.js"></script>
-  </body>
+  <script src="/JM_CTL/assets/js/main.js"></script>
+  <script>
+    document.querySelectorAll('.mouse-glow').forEach(card => {
+
+      card.addEventListener('mousemove', e => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+      });
+
+    });
+  </script>
+</body>
+
 </html>

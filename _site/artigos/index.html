@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
@@ -27,8 +27,9 @@
   <link rel="stylesheet" href="/JM_CTL/assets/css/main.css">
 </head>
 
-  <body>
-    <header class="site-header" data-header>
+
+<body>
+  <header class="site-header" data-header>
   <div class="container header-container">
 
     <a class="brand" href="/JM_CTL/" aria-label="Página inicial">
@@ -58,7 +59,7 @@
   </div>
 </header>
 
-    <main><section class="page-hero">
+  <main><section class="page-hero">
   <div class="container narrow reveal">
     <span class="eyebrow">Jorge Maia</span>
     <h1>Artigos</h1>
@@ -68,7 +69,7 @@
 <section class="section"><div class="container content-body reveal"><section class="articles-premium">
 
   <!-- HERO -->
-  <div class="articles-hero">
+  <div class="articles-hero mouse-glow">
     <div>
       <span class="eyebrow">Conteúdo</span>
 
@@ -123,7 +124,7 @@
 
     
 
-    <a class="article-card" href="/JM_CTL/eventos/2026/04/30/fabcon-microsoft-fabric/">
+    <a class="article-card mouse-glow" href="/JM_CTL/eventos/2026/04/30/fabcon-microsoft-fabric/">
 
       <div class="article-img">
         
@@ -142,7 +143,7 @@
 
     
 
-    <a class="article-card" href="/JM_CTL/eventos/2026/04/30/microsoft-ai-tour-sao-paulo/">
+    <a class="article-card mouse-glow" href="/JM_CTL/eventos/2026/04/30/microsoft-ai-tour-sao-paulo/">
 
       <div class="article-img">
         
@@ -161,7 +162,7 @@
 
     
 
-    <a class="article-card" href="/JM_CTL/tecnologia/2026/04/30/microsoft-ignite-2025/">
+    <a class="article-card mouse-glow" href="/JM_CTL/tecnologia/2026/04/30/microsoft-ignite-2025/">
 
       <div class="article-img">
         
@@ -184,7 +185,7 @@
 
 </section></div></section>
 </main>
-    <footer class="site-footer footer-premium">
+  <footer class="site-footer footer-premium">
   <div class="container footer-main">
     <div class="footer-brand">
       <a href="/JM_CTL/" class="footer-logo">
@@ -243,6 +244,23 @@
   </div>
 </footer>
 
-    <script src="/JM_CTL/assets/js/main.js"></script>
-  </body>
+  <script src="/JM_CTL/assets/js/main.js"></script>
+  <script>
+    document.querySelectorAll('.mouse-glow').forEach(card => {
+
+      card.addEventListener('mousemove', e => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+      });
+
+    });
+  </script>
+</body>
+
 </html>
