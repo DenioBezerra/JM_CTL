@@ -4,6 +4,20 @@ title: Home
 ---
 
 <section class="hero hero-ultra">
+  <div class="hero-particles" aria-hidden="true">
+  <span style="--i:1"></span>
+  <span style="--i:2"></span>
+  <span style="--i:3"></span>
+  <span style="--i:4"></span>
+  <span style="--i:5"></span>
+  <span style="--i:6"></span>
+  <span style="--i:7"></span>
+  <span style="--i:8"></span>
+  <span style="--i:9"></span>
+  <span style="--i:10"></span>
+  <span style="--i:11"></span>
+  <span style="--i:12"></span>
+</div>
   <div class="hero-orb hero-orb-one"></div>
   <div class="hero-orb hero-orb-two"></div>
 
@@ -26,7 +40,7 @@ title: Home
         <a class="btn secondary" href="{{ '/projetos/' | relative_url }}">Ver projetos</a>
       </div>
 
-      <div class="hero-ultra-stats">
+      <div class="hero-ultra-stats mouse-glow">
         <div>
           <strong>25+</strong>
           <span>anos de tecnologia</span>
@@ -72,7 +86,7 @@ title: Home
       <a class="btn secondary" href="{{ '/projetos/' | relative_url }}">Todos os projetos</a>
     </div>
 
-    <div class="projects-grid">
+    <div class="projects-grid mouse-glow">
       <a class="project-card project-card-large reveal" href="{{ '/projetos/' | relative_url }}">
         <div class="project-image">
           <img src="{{ '/assets/img/ctl.png' | relative_url }}" alt="CrazyTechLabs">
@@ -124,7 +138,7 @@ title: Home
       <a class="btn secondary" href="{{ '/artigos/' | relative_url }}">Ver todos</a>
     </div>
 
-    <div class="insights-grid">
+    <div class="insights-grid mouse-glow">
       {% for post in site.posts limit:3 %}
         <a class="insight-card reveal" href="{{ post.url | relative_url }}">
           <div class="insight-image">
@@ -165,7 +179,7 @@ title: Home
       </a>
     </div>
 
-    <div class="tech-grid">
+    <div class="tech-grid mouse-glow">
       {% for item in site.artigos_tecnicos limit:3 %}
         <a class="tech-card reveal" href="{{ item.url | relative_url }}">
 
@@ -211,7 +225,7 @@ title: Home
           <img src="{{ '/assets/img/jorgecastS9E5.png' | relative_url }}" alt="JorgeCast">
         </div>
 
-        <div class="media-info">
+        <div class="media-info mouse-glow">
           <span>JorgeCast</span>
           <h3>Conversas sobre tecnologia, carreira e inovação.</h3>
           <p>Entrevistas, ideias e debates com profissionais que ajudam a construir o futuro.</p>
@@ -247,7 +261,7 @@ title: Home
       <a class="btn secondary" href="{{ '/atividades/' | relative_url }}">Ver agenda</a>
     </div>
 
-    <div class="events-grid">
+    <div class="events-grid mouse-glow">
       {% for item in site.atividades limit:3 %}
         <a class="event-card reveal" href="{{ item.url | relative_url }}">
           <div class="event-image">

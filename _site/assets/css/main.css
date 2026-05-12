@@ -60,21 +60,97 @@ img {
 }
 
 .site-header {
-    background: rgba(2, 8, 20, 0.68);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.10),
+            rgba(255,255,255,.035)
+        ),
+        rgba(2, 8, 20, .68);
 
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
 
-    border-bottom: 1px solid rgba(255,255,255,.05);
+    border-bottom: 1px solid rgba(255,255,255,.14);
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,.25);
+        0 18px 55px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.18);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    transition:
+        background .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        transform .35s ease,
+        padding .35s ease;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at 20% 0%, rgba(77,227,255,.14), transparent 32%),
+        radial-gradient(circle at 80% 0%, rgba(59,130,246,.12), transparent 34%);
+
+    pointer-events: none;
+    opacity: .85;
+}
+
+.site-header::after {
+    content: "";
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    bottom: 0;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(77,227,255,.65),
+        rgba(248,195,106,.45),
+        transparent
+    );
+
+    opacity: 0;
+    transform: scaleX(.4);
+    transition: .45s ease;
+}
+
+.site-header > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* HEADER AO SCROLL MAIS PREMIUM */
 .site-header.scrolled {
-    background: rgba(7, 17, 31, 0.85);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.12),
+            rgba(255,255,255,.04)
+        ),
+        rgba(2, 8, 20, .82);
     backdrop-filter: blur(18px);
     border-bottom: 1px solid rgba(255,255,255,.08);
+    border-bottom-color: rgba(77,227,255,.18);
+    box-shadow:
+        0 22px 70px rgba(0,0,0,.45),
+        0 0 45px rgba(77,227,255,.08),
+        inset 0 1px 0 rgba(255,255,255,.20);
+}
+
+.site-header.scrolled::after {
+    opacity: 1;
+    transform: scaleX(1);
 }
 
 /* RESPONSIVO */
@@ -119,10 +195,15 @@ img {
     position: relative;
     font-size: 14px;
     letter-spacing: .4px;
+    transition:
+        color .25s ease,
+        transform .25s ease,
+        opacity .25s ease;
 }
 
 .site-nav a:hover {
     color: var(--cyan)
+    transform: translateY(-2px);
 }
 
 /* EFEITO HOVER PROFISSIONAL */
@@ -142,7 +223,29 @@ img {
 }
 
 
-.nav-cta,
+.nav-cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+    transform: translateX(-120%);
+    transition: .6s ease;
+}
+
+.nav-cta:hover::before {
+    transform: translateX(120%);
+}
+
 .btn {
     padding: 12px 18px;
     border-radius: 999px;
@@ -893,12 +996,16 @@ img {
 }
 
 /* LOGO */
+.brand img,
 .logo {
     height: 70px;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 4px 12px rgba(77,227,255,.25));
-    transition: .3s;
+    transition:
+        transform .35s ease,
+        filter .35s ease,
+        height .35s ease;
 }
 
 .logo:hover {
@@ -3475,7 +3582,7 @@ img {
 }
 
 /* ========================================
-   MICROSOFT BUILD / AZURE BACKGROUND
+   CYBERPUNK ELEGANT BACKGROUND
 ======================================== */
 
 body::before {
@@ -3485,14 +3592,38 @@ body::before {
     inset: 0;
 
     background:
-        radial-gradient(circle at 20% 20%, rgba(0,212,255,.18), transparent 22%),
-        radial-gradient(circle at 80% 30%, rgba(0,132,255,.14), transparent 25%),
-        radial-gradient(circle at 50% 80%, rgba(0,255,255,.08), transparent 28%);
 
-    z-index: -2;
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(77,227,255,.14),
+            transparent 24%
+        ),
 
-    animation: bgMove 18s ease-in-out infinite alternate;
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(59,130,246,.12),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 50% 80%,
+            rgba(0,255,255,.06),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            180deg,
+            rgba(2,6,16,.88),
+            rgba(2,6,16,.95)
+        );
+
+    z-index: -3;
+
+    animation:
+        cyberpunkBgMove 20s ease-in-out infinite alternate;
 }
+
+/* GRID FUTURISTA */
 
 body::after {
     content: "";
@@ -3500,29 +3631,66 @@ body::after {
     position: fixed;
     inset: 0;
 
-    background-image:
-        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+    background:
 
-    background-size: 80px 80px;
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,.025) 0px,
+            rgba(255,255,255,.025) 1px,
+            transparent 1px,
+            transparent 120px
+        ),
 
-    mask-image: radial-gradient(circle at center, black 30%, transparent 80%);
+        repeating-linear-gradient(
+            180deg,
+            rgba(255,255,255,.018) 0px,
+            rgba(255,255,255,.018) 1px,
+            transparent 1px,
+            transparent 120px
+        );
 
-    opacity: .16;
+    mask-image:
+        radial-gradient(circle at center, black 30%, transparent 80%);
 
-    z-index: -1;
+    opacity: .24;
+
+    z-index: -2;
+
+    animation:
+        cyberpunkGridMove 24s linear infinite;
 }
 
 /* MOVIMENTO SUAVE */
 
-@keyframes bgMove {
+@keyframes cyberpunkBgMove {
 
     0% {
-        transform: scale(1) translateY(0px);
+        transform:
+            scale(1)
+            translateY(0px);
     }
 
     100% {
-        transform: scale(1.08) translateY(-30px);
+        transform:
+            scale(1.06)
+            translateY(-24px);
+    }
+}
+
+/* MOVIMENTO GRID */
+
+@keyframes cyberpunkGridMove {
+
+    0% {
+        transform:
+            translateY(0px)
+            translateX(0px);
+    }
+
+    100% {
+        transform:
+            translateY(-120px)
+            translateX(-60px);
     }
 }
 
@@ -3605,7 +3773,7 @@ body::after {
 
 .hero-ultra-grid {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: grid;
     grid-template-columns: .95fr 1.05fr;
     gap: 76px;
@@ -3919,4 +4087,113 @@ body::after {
 .mouse-glow > * {
     position: relative;
     z-index: 2;
+}
+
+.brand:hover img,
+.brand:hover .logo {
+    transform: scale(1.04);
+    filter:
+        drop-shadow(0 0 18px rgba(77,227,255,.35))
+        drop-shadow(0 10px 24px rgba(0,0,0,.35));
+}
+
+/* =============================
+   HERO 3D PARTICLES
+============================= */
+
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+    perspective: 900px;
+}
+
+.hero-particles span {
+    position: absolute;
+    width: calc(6px + var(--i) * 1px);
+    height: calc(6px + var(--i) * 1px);
+    border-radius: 50%;
+    background: rgba(77,227,255,.55);
+    box-shadow:
+        0 0 18px rgba(77,227,255,.55),
+        0 0 45px rgba(59,130,246,.25);
+
+    left: calc((var(--i) * 8%) - 4%);
+    top: calc((var(--i) * 7%) - 2%);
+
+    animation: particleFloat calc(7s + var(--i) * .7s) ease-in-out infinite alternate;
+    opacity: .55;
+}
+
+.hero-particles span:nth-child(2n) {
+    background: rgba(248,195,106,.55);
+    box-shadow:
+        0 0 18px rgba(248,195,106,.45),
+        0 0 45px rgba(77,227,255,.18);
+}
+
+.hero-particles span:nth-child(3n) {
+    width: 3px;
+    height: 80px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(77,227,255,.8), transparent);
+}
+
+@keyframes particleFloat {
+    from {
+        transform:
+            translate3d(-20px, 20px, -80px)
+            rotateX(0deg)
+            rotateY(0deg);
+    }
+
+    to {
+        transform:
+            translate3d(34px, -44px, 160px)
+            rotateX(42deg)
+            rotateY(28deg);
+    }
+}
+
+/* ========================================
+   CYBERPUNK LIGHTS
+======================================== */
+
+.cyber-light {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(77,227,255,.12),
+            transparent 70%
+        );
+
+    filter: blur(40px);
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+.cyber-light.one {
+    top: -200px;
+    left: -120px;
+}
+
+.cyber-light.two {
+    bottom: -240px;
+    right: -140px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(59,130,246,.10),
+            transparent 70%
+        );
 }
