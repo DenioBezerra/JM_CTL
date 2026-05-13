@@ -29,6 +29,16 @@
 
 
 <body>
+  <div class="page-transition"></div>
+  <div class="page-loader" id="pageLoader">
+  <img src="/JM_CTL/assets/img/jorgemaialogomarcasemfundo.png" alt="Jorge Maia">
+</div>
+  <div class="noise-texture" aria-hidden="true"></div>
+  <div class="neon-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
   <div class="cyber-light one"></div>
   <div class="cyber-light two"></div>
   <header class="site-header" data-header>
@@ -61,6 +71,7 @@
   </div>
 </header>
 
+  <div class="page-transition">
   <main><section class="page-hero">
   <div class="container narrow reveal">
     <span class="eyebrow">Jorge Maia</span>
@@ -201,6 +212,42 @@
 
     });
   </script>
+  <script>
+
+const loader = document.getElementById('pageLoader');
+
+/* ESCONDE AO CARREGAR */
+
+window.addEventListener('load', () => {
+
+  setTimeout(() => {
+    loader.classList.add('hide');
+  }, 500);
+
+});
+
+/* MOSTRA AO NAVEGAR */
+
+document.querySelectorAll('a').forEach(link => {
+
+  const href = link.getAttribute('href');
+
+  if (
+    href &&
+    !href.startsWith('#') &&
+    !href.startsWith('http') &&
+    !link.hasAttribute('target')
+  ) {
+
+    link.addEventListener('click', () => {
+      loader.classList.remove('hide');
+    });
+
+  }
+
+});
+
+</script>
 </body>
 
 </html>

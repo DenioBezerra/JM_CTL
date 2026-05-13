@@ -3,9 +3,20 @@
 {% include head.html %}
 
 <body>
+  <div class="page-transition"></div>
+  <div class="page-loader" id="pageLoader">
+  <img src="{{ '/assets/img/jorgemaialogomarcasemfundo.png' | relative_url }}" alt="Jorge Maia">
+</div>
+  <div class="noise-texture" aria-hidden="true"></div>
+  <div class="neon-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
   <div class="cyber-light one"></div>
   <div class="cyber-light two"></div>
   {% include header.html %}
+  <div class="page-transition">
   <main>{{ content }}</main>
   {% include footer.html %}
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
@@ -25,6 +36,42 @@
 
     });
   </script>
+  <script>
+
+const loader = document.getElementById('pageLoader');
+
+/* ESCONDE AO CARREGAR */
+
+window.addEventListener('load', () => {
+
+  setTimeout(() => {
+    loader.classList.add('hide');
+  }, 500);
+
+});
+
+/* MOSTRA AO NAVEGAR */
+
+document.querySelectorAll('a').forEach(link => {
+
+  const href = link.getAttribute('href');
+
+  if (
+    href &&
+    !href.startsWith('#') &&
+    !href.startsWith('http') &&
+    !link.hasAttribute('target')
+  ) {
+
+    link.addEventListener('click', () => {
+      loader.classList.remove('hide');
+    });
+
+  }
+
+});
+
+</script>
 </body>
 
 </html>

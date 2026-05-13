@@ -202,8 +202,8 @@ img {
 }
 
 .site-nav a:hover {
-    color: var(--cyan)
-    transform: translateY(-2px);
+    color: var(--cyan);
+    transform: translateY(-2px)
 }
 
 /* EFEITO HOVER PROFISSIONAL */
@@ -3958,21 +3958,42 @@ body::after {
 .media-feature-card,
 .project-card,
 .award-card,
+
+/* ========================================
+   HOLOGRAPHIC GLASS
+======================================== */
+
 .glass {
     position: relative;
     overflow: hidden;
+
     background:
         linear-gradient(
-            145deg,
-            rgba(255,255,255,.12),
-            rgba(255,255,255,.035)
+            135deg,
+            rgba(255,255,255,.14),
+            rgba(255,255,255,.04)
         );
-    border: 1px solid rgba(255,255,255,.16);
-    backdrop-filter: blur(24px) saturate(160%);
-    -webkit-backdrop-filter: blur(24px) saturate(160%);
+
+    border: 1px solid rgba(255,255,255,.14);
+
+    backdrop-filter:
+        blur(26px)
+        saturate(180%);
+
+    -webkit-backdrop-filter:
+        blur(26px)
+        saturate(180%);
+
+    border-radius: 30px;
+
     box-shadow:
-        0 30px 90px rgba(0,0,0,.38),
+        0 24px 80px rgba(0,0,0,.35),
         inset 0 1px 0 rgba(255,255,255,.18);
+
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease,
+        border-color .45s ease;
 }
 
 .vision-card::before,
@@ -3985,13 +4006,29 @@ body::after {
 .award-card::before,
 .glass::before {
     content: "";
+
     position: absolute;
     inset: 0;
+
     background:
-        radial-gradient(circle at top left, rgba(255,255,255,.18), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(77,227,255,.10), transparent 36%);
-    opacity: .85;
+        linear-gradient(
+            120deg,
+            transparent 20%,
+            rgba(77,227,255,.10) 35%,
+            rgba(255,255,255,.08) 50%,
+            rgba(248,195,106,.08) 65%,
+            transparent 80%
+        );
+
+    opacity: .75;
+
     pointer-events: none;
+
+    transform:
+        translateX(-20%);
+
+    transition:
+        transform .8s ease;
 }
 
 .vision-card::after,
@@ -4002,12 +4039,20 @@ body::after {
 .media-feature-card::after,
 .project-card::after,
 .award-card::after,
+/* REFLEXO PREMIUM */
+
 .glass::after {
     content: "";
+
     position: absolute;
+
     inset: 1px;
+
     border-radius: inherit;
-    border: 1px solid rgba(255,255,255,.06);
+
+    border:
+        1px solid rgba(255,255,255,.05);
+
     pointer-events: none;
 }
 
@@ -4020,12 +4065,22 @@ body::after {
 .project-card:hover,
 .award-card:hover,
 .glass:hover {
-    transform: translateY(-8px) scale(1.01);
-    border-color: rgba(255,255,255,.28);
+    transform:
+        translateY(-10px)
+        scale(1.01);
+
+    border-color:
+        rgba(77,227,255,.22);
+
     box-shadow:
-        0 40px 110px rgba(0,0,0,.48),
-        0 0 55px rgba(77,227,255,.12),
-        inset 0 1px 0 rgba(255,255,255,.22);
+        0 35px 100px rgba(0,0,0,.45),
+        0 0 45px rgba(77,227,255,.10),
+        inset 0 1px 0 rgba(255,255,255,.24);
+}
+
+.glass:hover::before {
+    transform:
+        translateX(20%);
 }
 
 .card > *,
@@ -4197,3 +4252,161 @@ body::after {
             transparent 70%
         );
 }
+
+/* =============================
+   FLOATING NEON ORBS
+============================= */
+
+.neon-orbs {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.orb {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    filter: blur(42px);
+    opacity: .45;
+    mix-blend-mode: screen;
+    animation: orbFloat 14s ease-in-out infinite alternate;
+}
+
+.orb-1 {
+    width: 360px;
+    height: 360px;
+    left: -120px;
+    top: 18%;
+    background: rgba(77, 227, 255, .22);
+}
+
+.orb-2 {
+    width: 440px;
+    height: 440px;
+    right: -160px;
+    top: 36%;
+    background: rgba(59, 130, 246, .20);
+    animation-delay: 2s;
+}
+
+.orb-3 {
+    width: 300px;
+    height: 300px;
+    left: 45%;
+    bottom: -120px;
+    background: rgba(248, 195, 106, .12);
+    animation-delay: 4s;
+}
+
+@keyframes orbFloat {
+    from {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    to {
+        transform: translate3d(40px, -55px, 0) scale(1.12);
+    }
+}
+
+/* =============================
+   NOISE TEXTURE PREMIUM
+============================= */
+
+.noise-texture {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: .045;
+    mix-blend-mode: overlay;
+
+    background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+.insight-card,
+.article-card,
+.project-card,
+.media-card,
+.podcast-episode-card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ========================================
+   PAGE LOADER
+======================================== */
+
+.page-loader {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at center, rgba(77,227,255,.08), transparent 45%),
+        rgba(2, 6, 16, .96);
+
+    backdrop-filter: blur(14px);
+
+    z-index: 999999;
+
+    transition:
+        opacity .55s ease,
+        visibility .55s ease;
+
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ESCONDE */
+
+.page-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* LOGO */
+
+.page-loader img {
+    width: 180px;
+    max-width: 70vw;
+
+    animation:
+        loaderPulse 2s ease-in-out infinite;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes loaderPulse {
+
+    0% {
+        transform: scale(1);
+        opacity: .85;
+
+        filter:
+            drop-shadow(0 0 0 rgba(77,227,255,0));
+    }
+
+    50% {
+        transform: scale(1.04);
+        opacity: 1;
+
+        filter:
+            drop-shadow(0 0 28px rgba(77,227,255,.35));
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: .85;
+
+        filter:
+            drop-shadow(0 0 0 rgba(77,227,255,0));
+    }
+}
+
