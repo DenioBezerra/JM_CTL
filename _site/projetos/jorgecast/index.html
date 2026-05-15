@@ -32,6 +32,20 @@
 
 
 <body>
+  <div class="site-particles" aria-hidden="true">
+  <span style="--i:1"></span>
+  <span style="--i:2"></span>
+  <span style="--i:3"></span>
+  <span style="--i:4"></span>
+  <span style="--i:5"></span>
+  <span style="--i:6"></span>
+  <span style="--i:7"></span>
+  <span style="--i:8"></span>
+  <span style="--i:9"></span>
+  <span style="--i:10"></span>
+  <span style="--i:11"></span>
+  <span style="--i:12"></span>
+</div>
   <div class="page-transition"></div>
   <div class="page-loader" id="pageLoader">
   <img src="/JM_CTL/assets/img/jorgemaialogomarcasemfundo.png" alt="Jorge Maia">
@@ -56,7 +70,6 @@
     </button>
 
     <nav class="site-nav" data-nav>
-      <a href="/JM_CTL/">Home</a>
       <a href="/JM_CTL/sobre/">Sobre</a>
       <a href="/JM_CTL/projetos/">Projetos</a>
       <a href="/JM_CTL/podcast/">JorgeCast</a>
@@ -69,13 +82,22 @@
       <a class="nav-cta" href="/JM_CTL/contato/">
         Contato
       </a>
+      <div class="global-search">
+  <input type="text" id="globalSearch" placeholder="Buscar conteúdos...">
+
+  <div class="search-results"></div>
+</div>
     </nav>
 
   </div>
 </header>
 
   <div class="page-transition">
-  <main><article class="post-premium">
+  <main><div class="reading-progress">
+  <span id="readingProgressBar"></span>
+</div>
+
+<article class="post-premium">
 
   <header class="post-premium-hero">
     <div class="container post-premium-grid">
@@ -261,6 +283,43 @@ document.querySelectorAll('a').forEach(link => {
 });
 
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll("[data-count]");
+
+  const animateCounter = (counter) => {
+    const target = Number(counter.dataset.count);
+    const duration = 1400;
+    const start = performance.now();
+
+    const update = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      counter.textContent = Math.floor(eased * target);
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    requestAnimationFrame(update);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !entry.target.dataset.animated) {
+        entry.target.dataset.animated = "true";
+        animateCounter(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach((counter) => observer.observe(counter));
+});
+</script>
+<script src="/JM_CTL/assets/js/search.js"></script>
 </body>
 
 </html>

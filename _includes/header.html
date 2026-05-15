@@ -10,7 +10,6 @@
     </button>
 
     <nav class="site-nav" data-nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/sobre/' | relative_url }}">Sobre</a>
       <a href="{{ '/projetos/' | relative_url }}">Projetos</a>
       <a href="{{ '/podcast/' | relative_url }}">JorgeCast</a>
@@ -23,6 +22,11 @@
       <a class="nav-cta" href="{{ '/contato/' | relative_url }}">
         Contato
       </a>
+      <div class="global-search">
+  <input type="text" id="globalSearch" placeholder="Buscar conteúdos...">
+
+  <div class="search-results"></div>
+</div>
     </nav>
 
   </div>

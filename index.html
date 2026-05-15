@@ -4,20 +4,7 @@ title: Home
 ---
 
 <section class="hero hero-ultra">
-  <div class="hero-particles" aria-hidden="true">
-  <span style="--i:1"></span>
-  <span style="--i:2"></span>
-  <span style="--i:3"></span>
-  <span style="--i:4"></span>
-  <span style="--i:5"></span>
-  <span style="--i:6"></span>
-  <span style="--i:7"></span>
-  <span style="--i:8"></span>
-  <span style="--i:9"></span>
-  <span style="--i:10"></span>
-  <span style="--i:11"></span>
-  <span style="--i:12"></span>
-</div>
+  
   <div class="hero-orb hero-orb-one"></div>
   <div class="hero-orb hero-orb-two"></div>
 
@@ -72,6 +59,99 @@ title: Home
       </div>
     </div>
   </div>
+</section>
+
+<section class="section stats-dashboard-section">
+  <div class="container">
+    <div class="dashboard-header reveal">
+      <span class="eyebrow">Impacto</span>
+      <h2>Números que representam uma trajetória em tecnologia.</h2>
+      <p>Experiência, comunidade, conteúdo e presença em eventos conectando inovação e pessoas.</p>
+    </div>
+
+    <div class="stats-dashboard">
+      <div class="dashboard-card reveal">
+        <strong data-count="25">0</strong>
+        <span>anos de experiência</span>
+      </div>
+
+      <div class="dashboard-card reveal">
+        <strong data-count="100">0</strong>
+        <span>conteúdos publicados</span>
+      </div>
+
+      <div class="dashboard-card reveal">
+        <strong data-count="50">0</strong>
+        <span>eventos e participações</span>
+      </div>
+
+      <div class="dashboard-card reveal">
+        <strong data-count="30">0</strong>
+        <span>episódios e entrevistas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tech-stack-section">
+
+  <div class="container">
+
+    <div class="tech-stack-head reveal">
+      <span class="eyebrow">Ecossistema</span>
+
+      <h2>
+        Tecnologias, plataformas e inovação conectadas ao futuro.
+      </h2>
+
+      <p>
+        Cloud, inteligência artificial, dados, IoT e desenvolvimento
+        compondo um ecossistema moderno para projetos, comunidades e negócios digitais.
+      </p>
+    </div>
+
+    <div class="tech-stack-grid">
+
+      <div class="tech-stack-card reveal">
+        <img src="{{ '/assets/img/azure.png' | relative_url }}" alt="Azure">
+        <h3>Microsoft Azure</h3>
+        <p>Cloud computing, arquitetura escalável e soluções modernas.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="{{ '/assets/img/github.webp' | relative_url }}" alt="GitHub">
+        <h3>GitHub</h3>
+        <p>Versionamento, colaboração e desenvolvimento moderno.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="{{ '/assets/img/githubcopilot.png' | relative_url }}" alt="GitHub Copilot">
+        <h3>GitHub Copilot</h3>
+        <p>IA aplicada à produtividade e aceleração de desenvolvimento.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="{{ '/assets/img/iot.webp' | relative_url }}" alt="IoT">
+        <h3>Internet das Coisas</h3>
+        <p>Dispositivos conectados, automação e dados inteligentes.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="{{ '/assets/img/ia.png' | relative_url }}" alt="IA">
+        <h3>Inteligência Artificial</h3>
+        <p>Modelos inteligentes, IA generativa e transformação digital.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="{{ '/assets/img/clound.png' | relative_url }}" alt="Cloud">
+        <h3>Cloud & Dados</h3>
+        <p>Integração, analytics, escalabilidade e inovação baseada em dados.</p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 <section class="section alt projects-showcase">
@@ -289,6 +369,46 @@ title: Home
   </div>
 </section>
 
+<div style="display:none">
+
+  {% for post in site.posts %}
+    <div
+      data-search-item
+      data-title="{{ post.title }}"
+      data-category="{{ post.category }}"
+      data-url="{{ post.url | relative_url }}">
+    </div>
+  {% endfor %}
+
+  {% for item in site.artigos_tecnicos %}
+    <div
+      data-search-item
+      data-title="{{ item.title }}"
+      data-category="Artigo Técnico"
+      data-url="{{ item.url | relative_url }}">
+    </div>
+  {% endfor %}
+
+  {% for item in site.episodios %}
+    <div
+      data-search-item
+      data-title="{{ item.title }}"
+      data-category="JorgeCast"
+      data-url="{{ item.url | relative_url }}">
+    </div>
+  {% endfor %}
+
+  {% for item in site.projetos %}
+    <div
+      data-search-item
+      data-title="{{ item.title }}"
+      data-category="Projeto"
+      data-url="{{ item.url | relative_url }}">
+    </div>
+  {% endfor %}
+
+</div>
+
 <section class="section awards-home awards-premium">
   <div class="container">
     <div class="section-head reveal">
@@ -326,6 +446,28 @@ title: Home
           <h3>Presença em eventos, comunidades e iniciativas digitais</h3>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<section class="section newsletter-section">
+  <div class="container">
+    <div class="newsletter-card reveal">
+      <div class="newsletter-content">
+        <span class="eyebrow">Newsletter</span>
+
+        <h2>Receba insights sobre tecnologia, IA, cloud e inovação.</h2>
+
+        <p>
+          Conteúdos, eventos, artigos técnicos e novidades sobre o ecossistema de tecnologia
+          direto no seu e-mail.
+        </p>
+      </div>
+
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" placeholder="Seu melhor e-mail" required>
+        <button type="submit" class="btn">Inscrever-se</button>
+      </form>
     </div>
   </div>
 </section>

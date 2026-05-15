@@ -29,6 +29,20 @@
 
 
 <body>
+  <div class="site-particles" aria-hidden="true">
+  <span style="--i:1"></span>
+  <span style="--i:2"></span>
+  <span style="--i:3"></span>
+  <span style="--i:4"></span>
+  <span style="--i:5"></span>
+  <span style="--i:6"></span>
+  <span style="--i:7"></span>
+  <span style="--i:8"></span>
+  <span style="--i:9"></span>
+  <span style="--i:10"></span>
+  <span style="--i:11"></span>
+  <span style="--i:12"></span>
+</div>
   <div class="page-transition"></div>
   <div class="page-loader" id="pageLoader">
   <img src="/JM_CTL/assets/img/jorgemaialogomarcasemfundo.png" alt="Jorge Maia">
@@ -53,7 +67,6 @@
     </button>
 
     <nav class="site-nav" data-nav>
-      <a href="/JM_CTL/">Home</a>
       <a href="/JM_CTL/sobre/">Sobre</a>
       <a href="/JM_CTL/projetos/">Projetos</a>
       <a href="/JM_CTL/podcast/">JorgeCast</a>
@@ -66,6 +79,11 @@
       <a class="nav-cta" href="/JM_CTL/contato/">
         Contato
       </a>
+      <div class="global-search">
+  <input type="text" id="globalSearch" placeholder="Buscar conteúdos...">
+
+  <div class="search-results"></div>
+</div>
     </nav>
 
   </div>
@@ -73,20 +91,7 @@
 
   <div class="page-transition">
   <main><section class="hero hero-ultra">
-  <div class="hero-particles" aria-hidden="true">
-  <span style="--i:1"></span>
-  <span style="--i:2"></span>
-  <span style="--i:3"></span>
-  <span style="--i:4"></span>
-  <span style="--i:5"></span>
-  <span style="--i:6"></span>
-  <span style="--i:7"></span>
-  <span style="--i:8"></span>
-  <span style="--i:9"></span>
-  <span style="--i:10"></span>
-  <span style="--i:11"></span>
-  <span style="--i:12"></span>
-</div>
+  
   <div class="hero-orb hero-orb-one"></div>
   <div class="hero-orb hero-orb-two"></div>
 
@@ -141,6 +146,99 @@
       </div>
     </div>
   </div>
+</section>
+
+<section class="section stats-dashboard-section">
+  <div class="container">
+    <div class="dashboard-header reveal">
+      <span class="eyebrow">Impacto</span>
+      <h2>Números que representam uma trajetória em tecnologia.</h2>
+      <p>Experiência, comunidade, conteúdo e presença em eventos conectando inovação e pessoas.</p>
+    </div>
+
+    <div class="stats-dashboard">
+      <div class="dashboard-card reveal">
+        <strong data-count="25">0</strong>
+        <span>anos de experiência</span>
+      </div>
+
+      <div class="dashboard-card reveal">
+        <strong data-count="100">0</strong>
+        <span>conteúdos publicados</span>
+      </div>
+
+      <div class="dashboard-card reveal">
+        <strong data-count="50">0</strong>
+        <span>eventos e participações</span>
+      </div>
+
+      <div class="dashboard-card reveal">
+        <strong data-count="30">0</strong>
+        <span>episódios e entrevistas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tech-stack-section">
+
+  <div class="container">
+
+    <div class="tech-stack-head reveal">
+      <span class="eyebrow">Ecossistema</span>
+
+      <h2>
+        Tecnologias, plataformas e inovação conectadas ao futuro.
+      </h2>
+
+      <p>
+        Cloud, inteligência artificial, dados, IoT e desenvolvimento
+        compondo um ecossistema moderno para projetos, comunidades e negócios digitais.
+      </p>
+    </div>
+
+    <div class="tech-stack-grid">
+
+      <div class="tech-stack-card reveal">
+        <img src="/JM_CTL/assets/img/azure.png" alt="Azure">
+        <h3>Microsoft Azure</h3>
+        <p>Cloud computing, arquitetura escalável e soluções modernas.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="/JM_CTL/assets/img/github.webp" alt="GitHub">
+        <h3>GitHub</h3>
+        <p>Versionamento, colaboração e desenvolvimento moderno.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="/JM_CTL/assets/img/githubcopilot.png" alt="GitHub Copilot">
+        <h3>GitHub Copilot</h3>
+        <p>IA aplicada à produtividade e aceleração de desenvolvimento.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="/JM_CTL/assets/img/iot.webp" alt="IoT">
+        <h3>Internet das Coisas</h3>
+        <p>Dispositivos conectados, automação e dados inteligentes.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="/JM_CTL/assets/img/ia.png" alt="IA">
+        <h3>Inteligência Artificial</h3>
+        <p>Modelos inteligentes, IA generativa e transformação digital.</p>
+      </div>
+
+      <div class="tech-stack-card reveal">
+        <img src="/JM_CTL/assets/img/clound.png" alt="Cloud">
+        <h3>Cloud & Dados</h3>
+        <p>Integração, analytics, escalabilidade e inovação baseada em dados.</p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 <section class="section alt projects-showcase">
@@ -474,6 +572,102 @@
   </div>
 </section>
 
+<div style="display:none">
+
+  
+    <div
+      data-search-item
+      data-title="FabCon - Microsoft Fabric Community Conference"
+      data-category="Eventos"
+      data-url="/JM_CTL/eventos/2026/04/30/fabcon-microsoft-fabric/">
+    </div>
+  
+    <div
+      data-search-item
+      data-title="Microsoft AI Tour São Paulo"
+      data-category="Eventos"
+      data-url="/JM_CTL/eventos/2026/04/30/microsoft-ai-tour-sao-paulo/">
+    </div>
+  
+    <div
+      data-search-item
+      data-title="Microsoft Ignite 2025"
+      data-category="Tecnologia"
+      data-url="/JM_CTL/tecnologia/2026/04/30/microsoft-ignite-2025/">
+    </div>
+  
+
+  
+    <div
+      data-search-item
+      data-title="IoT com Azure: conectando dispositivos, dados e inteligência"
+      data-category="Artigo Técnico"
+      data-url="/JM_CTL/artigos-tecnicos/iot-com-azure/">
+    </div>
+  
+    <div
+      data-search-item
+      data-title="Gêmeos digitais e negócios conectados"
+      data-category="Artigo Técnico"
+      data-url="/JM_CTL/artigos-tecnicos/gemeos-digitais/">
+    </div>
+  
+    <div
+      data-search-item
+      data-title="GitHub Copilot para desenvolvedores"
+      data-category="Artigo Técnico"
+      data-url="/JM_CTL/artigos-tecnicos/github-copilot-para-devs/">
+    </div>
+  
+
+  
+    <div
+      data-search-item
+      data-title="Entrevistas, ideias e comunidade"
+      data-category="JorgeCast"
+      data-url="/JM_CTL/podcast/entrevistas-ideias-comunidade/">
+    </div>
+  
+    <div
+      data-search-item
+      data-title="Existe o novo normal?"
+      data-category="JorgeCast"
+      data-url="/JM_CTL/podcast/existe-o-novo-normal/">
+    </div>
+  
+    <div
+      data-search-item
+      data-title="JorgeCast S9E5 - Blockchain + IoT"
+      data-category="JorgeCast"
+      data-url="/JM_CTL/podcast/jorgecast-s9e5-blockchain-iot/">
+    </div>
+  
+
+  
+    <div
+      data-search-item
+      data-title="Canal no YouTube"
+      data-category="Projeto"
+      data-url="/JM_CTL/projetos/canal-youtube/">
+    </div>
+  
+    <div
+      data-search-item
+      data-title="CrazyTechLabs"
+      data-category="Projeto"
+      data-url="/JM_CTL/projetos/crazytechlabs/">
+    </div>
+  
+    <div
+      data-search-item
+      data-title="JorgeCast"
+      data-category="Projeto"
+      data-url="/JM_CTL/projetos/jorgecast/">
+    </div>
+  
+
+</div>
+
 <section class="section awards-home awards-premium">
   <div class="container">
     <div class="section-head reveal">
@@ -511,6 +705,28 @@
           <h3>Presença em eventos, comunidades e iniciativas digitais</h3>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<section class="section newsletter-section">
+  <div class="container">
+    <div class="newsletter-card reveal">
+      <div class="newsletter-content">
+        <span class="eyebrow">Newsletter</span>
+
+        <h2>Receba insights sobre tecnologia, IA, cloud e inovação.</h2>
+
+        <p>
+          Conteúdos, eventos, artigos técnicos e novidades sobre o ecossistema de tecnologia
+          direto no seu e-mail.
+        </p>
+      </div>
+
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" placeholder="Seu melhor e-mail" required>
+        <button type="submit" class="btn">Inscrever-se</button>
+      </form>
     </div>
   </div>
 </section></main>
@@ -626,6 +842,43 @@ document.querySelectorAll('a').forEach(link => {
 });
 
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll("[data-count]");
+
+  const animateCounter = (counter) => {
+    const target = Number(counter.dataset.count);
+    const duration = 1400;
+    const start = performance.now();
+
+    const update = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      counter.textContent = Math.floor(eased * target);
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    requestAnimationFrame(update);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !entry.target.dataset.animated) {
+        entry.target.dataset.animated = "true";
+        animateCounter(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach((counter) => observer.observe(counter));
+});
+</script>
+<script src="/JM_CTL/assets/js/search.js"></script>
 </body>
 
 </html>
